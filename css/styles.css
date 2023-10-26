@@ -41,3 +41,21 @@
     margin-left: 30px;
 }
 /* END - TRANSLATIONS */
+
+/* BEGIN - FOOTER LOGOS */
+.footer-logo{
+    width: 160px;
+    height: 100px;
+    padding-right: 20px;
+}
+.footer-logo-calco{
+    width: 200px;
+    height: 80px;
+    padding-right: 20px;
+}
+.footer-logo-angus{
+    width: 160px;
+    height: 80px;
+    padding-right: 20px;
+}
+/* END - FOOTER LOGOS */
