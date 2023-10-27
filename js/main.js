@@ -21,10 +21,16 @@ window.addEventListener('DOMContentLoaded', function () {
 
     /* BEGIN - TRANSLATIONS */
     const chooseLanguage = document.getElementById('id_change_language')
+
+    chooseLanguage.addEventListener('focus', function () {
+        chooseLanguage.style.backgroundColor = '#e32121'
+        chooseLanguage.style.color = 'white'
+    })
+
     chooseLanguage.addEventListener('change', changeLanguage)
 
     function changeLanguage() {
-        currentLanguage = chooseLanguage.value;
+        currentLanguage = chooseLanguage.value
         path = 'i18n/' + currentLanguage + '.json'
 
         fetch(path)
