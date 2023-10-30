@@ -67,6 +67,7 @@
 }
 /* END - FOOTER LOGOS */
 
+/* <<<<<<< patcher */
 
 /* BEGIN - BUTTON LENGUAGE SWITCH*/
 .switch {
@@ -175,3 +176,4 @@ input.check-toggle-round-flat:checked + label {
 input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
 }
+/* =======>>>>>>> main */
