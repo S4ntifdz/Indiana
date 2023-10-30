@@ -67,6 +67,7 @@
 }
 /* END - FOOTER LOGOS */
 
+/* <<<<<<< patcher */
 
 /* BEGIN - BUTTON LENGUAGE SWITCH*/
 .switch {
@@ -99,7 +100,7 @@ input.check-toggle-round-flat:checked ~ .on {
 .switch > span.on {
   left: 0;
   padding-left: 2px;
-  color: #f36f25;
+  color: #F36F25;
 }
 
 .switch > span.off {
@@ -175,3 +176,4 @@ input.check-toggle-round-flat:checked + label {
 input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
 }
+/* =======>>>>>>> main */
