@@ -370,7 +370,6 @@ strong {
 -----------------------------------------*/
 .video-wrap {
   z-index: -100;
-  
 }
 
 .custom-video {
@@ -381,7 +380,11 @@ strong {
   width: 100%;
   height: 100%;
 }
-
+.video-section{
+  border-radius: var(--border-radius-medium);
+  width: 100%;
+  height: 100%;
+}
 
 /*---------------------------------------
   SITE HEADER              
@@ -633,8 +636,8 @@ strong {
 
 .artists-image {
   border-radius: var(--border-radius-medium);
-  display: block;
   width: 100%;
+  height: 15em;
 }
 
 .artists-thumb:hover .artists-hover {
