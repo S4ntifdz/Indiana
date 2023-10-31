@@ -386,6 +386,19 @@ strong {
   height: 100%;
 }
 
+.artists-thumb:hover{
+  .video-section{
+    cursor: pointer;
+    border: #000000 0.1em solid;
+    filter:sepia(50%);
+    width: 100%;
+    height: 100%;
+  }
+}
+.text-video-link{
+  font-size: 1.1em;
+  color: #363a3e ;
+}
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
@@ -646,6 +659,7 @@ strong {
 }
 
 .artists-hover {
+  cursor:pointer;
   background-color: var(--primary-color);
   background-color: rgba(223, 223, 216, 0.564);
   border-radius: var(--border-radius-medium);
@@ -660,7 +674,6 @@ strong {
   right: 0;
   left: 0;
   opacity: 0;
-  
 }
 
 .artists-hover p strong {
