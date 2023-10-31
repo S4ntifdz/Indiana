@@ -12,17 +12,17 @@ https://templatemo.com/tm-583-festava-live
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #F8CB2E;
-  --secondary-color:              #ee0707;
+  --primary-color:                #e1be3f;
+  --secondary-color:              #ac0000;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #ee0707;
-  --custom-btn-bg-hover-color:    #F8CB2E;
-  --custom-btn-lng-color:         #e32121;/*<---- button lenguage #e32121 */
-  --custom-btn-lng-hover-color:   #F8CB2E; /* #c01f27 */ /*Color de hover de botones*/
+  --custom-btn-bg-color:          #ac0000;
+  --custom-btn-bg-hover-color:    #e1be3f;
+  --custom-btn-lng-color:         #ac0000;/*<---- button lenguage #e32121 */
+  --custom-btn-lng-hover-color:   #e1be3f; /* #c01f27 */ /*Color de hover de botones*/
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #7fffd4;
-  --link-hover-color:             #F8CB2E;
+  --link-hover-color:             #e1be3f;
   --navbar-responsive-color:      #c8c8c800;
 /* --body-font-family:             'Outfit', sans-serif;  */
 
@@ -398,6 +398,10 @@ strong {
 .text-video-link{
   font-size: 1.1em;
   color: #363a3e ;
+}
+.text-video-link:hover{
+  font-size: 1.5em;
+  color: #ac0000;
 }
 /*---------------------------------------
   SITE HEADER              
