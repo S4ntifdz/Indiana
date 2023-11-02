@@ -177,3 +177,8 @@ input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
 }
 /* =======>>>>>>> main */
+.icon-cow{
+
+    width: 160px;
+    height: 160px;
+}
