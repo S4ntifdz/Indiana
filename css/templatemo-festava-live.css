@@ -18,7 +18,7 @@ https://templatemo.com/tm-583-festava-live
   --custom-btn-bg-color:          #ac0000;
   --custom-btn-bg-hover-color:    #820000;
   --custom-btn-lng-color:         #ac0000;/*<---- button lenguage #e32121 */
-  --custom-btn-lng-hover-color:   #e1be3f; /* #c01f27 */ /*Color de hover de botones*/
+  --custom-btn-lng-hover-color:   #820000; /* #c01f27 */ /*Color de hover de botones*/
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #7fffd4;
@@ -55,7 +55,9 @@ body {
   font-family: var(--body-font-family); 
 }
 
-
+textarea {
+  resize: none;
+}
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
