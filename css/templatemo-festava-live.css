@@ -259,21 +259,27 @@ strong {
   padding: 15px;
 }
 
-.nav-tabs .nav-link {
+.nav-tabs .nav-link,
+.nav-tabs .nav-link2 {
   border-radius: var(--border-radius-large);
   border: 0;
   padding: 15px 25px;
   transition: all 0.3s;
 }
 
-.nav-tabs .nav-link:first-child {
+.nav-tabs .nav-link:first-child,
+.nav-tabs .nav-link2:first-child {
   margin-right: 15px;
 }
 
 .nav-tabs .nav-item.show .nav-link, 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:focus, 
-.nav-tabs .nav-link:hover {
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-item.show .nav-link2, 
+.nav-tabs .nav-link2.active,
+.nav-tabs .nav-link2:focus, 
+.nav-tabs .nav-link2:hover {
   background: var(--white-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
   color: var(--primary-color);
@@ -286,7 +292,10 @@ strong {
 
 .nav-tabs .nav-link.active h5,
 .nav-tabs .nav-link:focus h5, 
-.nav-tabs .nav-link:hover h5 {
+.nav-tabs .nav-link:hover h5,
+.nav-tabs .nav-link2.active h5,
+.nav-tabs .nav-link2:focus h5, 
+.nav-tabs .nav-link2:hover h5  {
   color: var(--primary-color);
 }
 
@@ -342,6 +351,7 @@ strong {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
+.navbar-expand-lg .navbar-nav .nav-link2.custom-btn:hover,
 .custom-border-btn:hover {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
@@ -446,13 +456,15 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
+.navbar-expand-lg .navbar-nav .nav-link,
+.navbar-expand-lg .navbar-nav .nav-link2 {
   border-radius: var(--border-radius-large);
   margin: 0px;
   padding: 0px 20px;
 }
 
-.navbar-nav .nav-link {
+.navbar-nav .nav-link,
+.navbar-nav .nav-link2 {
   display: inline-block;
   color: var(--white-color);
   font-size: var(--p-font-size);
@@ -463,7 +475,9 @@ strong {
 }
 
 .navbar-nav .nav-link.active, 
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link2.active, 
+.navbar-nav .nav-link2:hover {
   color: var(--secondary-color);
 }
 
@@ -1040,7 +1054,8 @@ strong {
     padding-bottom: 30px;
   }
 
-  .navbar-expand-lg .navbar-nav .nav-link {
+  .navbar-expand-lg .navbar-nav .nav-link,
+  .navbar-expand-lg .navbar-nav .nav-link2 {
     padding: 0;
   }
 
