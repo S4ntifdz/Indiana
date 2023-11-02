@@ -576,6 +576,7 @@ strong {
 
 .about-image {
   border-radius: var(--border-radius-medium);
+  box-shadow: #000000 0.2em 0.2em 0.2em ;
   display: block;
 }
 
@@ -782,7 +783,15 @@ strong {
   z-index: 2;
 }
 
-
+.mb-4-slogan{
+  margin-bottom:1.5rem!important;
+  font-family: 'Martian Mono', monospace;
+  font-family: 'Noto Serif Makasar', serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Overlock SC', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-weight: 200;
+}
 /*---------------------------------------
   PRICING              
 -----------------------------------------*/
