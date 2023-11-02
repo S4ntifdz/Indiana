@@ -45,4 +45,16 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     /* END - TRANSLATIONS */
 
+    /* BEGIN - REDIRECTS */
+    const navItems = Array.from(document.getElementsByClassName('nav-link'))
+
+    navItems.forEach(function(item, index) {
+        item.addEventListener('click', function () {
+            if (index >= 1) {
+                window.location.href = 'index2.html'
+            }
+        })
+    })
+    /* END - REDIRECTS */
+
 })

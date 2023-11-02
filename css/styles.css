@@ -177,8 +177,24 @@ input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
 }
 /* =======>>>>>>> main */
+
 .icon-cow{
 
     width: 160px;
     height: 160px;
+}
+
+.nav-link,
+.nav-link2 {
+  cursor: pointer;
+}
+
+/* index2.html */
+.hero-section {
+  background-color: #ccdbe8;
+}
+
+#data_content_sales, #data_content_meat_zone {
+  visibility: hidden;
+  opacity: 0;
 }
