@@ -8,17 +8,13 @@ window.addEventListener('DOMContentLoaded', function () {
     const selected = urlParams.get('selected')
 
     if (selected) {
+        /* hide data contents */
         hideDataContent(dataContents)
 
         /* show data contents */
-        const elementToShow = document.getElementById('data_content_' + selected);
-        if (elementToShow) {
-            elementToShow.style.visibility = 'visible'
-            elementToShow.style.opacity = '1'
-        }
+        showDataContent(selected)
 
         /* set navbar item color by url */
-        const navItems = Array.from(document.getElementsByClassName('nav-link2'))
         if (navItems[selected]) {
             navItems[selected].style.color = '#ac0000'
         }
@@ -62,28 +58,23 @@ window.addEventListener('DOMContentLoaded', function () {
             }
             if (index == 1) {
                 hideDataContent(dataContents)
-                dataContents[0].style.visibility = 'visible'
-                dataContents[0].style.opacity = '1'
+                showDataContent(index)
             }
             if (index == 2) {
                 hideDataContent(dataContents)
-                dataContents[1].style.visibility = 'visible'
-                dataContents[1].style.opacity = '1'
+                showDataContent(index)
             }
             if (index == 3) {
                 hideDataContent(dataContents)
-                dataContents[2].style.visibility = 'visible'
-                dataContents[2].style.opacity = '1'
+                showDataContent(index)
             }
             if (index == 4) {
                 hideDataContent(dataContents)
-                dataContents[3].style.visibility = 'visible'
-                dataContents[3].style.opacity = '1'
+                showDataContent(index)
             }
             if (index == 5) {
                 hideDataContent(dataContents)
-                dataContents[4].style.visibility = 'visible'
-                dataContents[4].style.opacity = '1'
+                showDataContent(index)
             }
         })
     })
@@ -95,6 +86,15 @@ window.addEventListener('DOMContentLoaded', function () {
             data.style.visibility = 'hidden'
             data.style.opacity = '0'
         })
+    }
+
+    /* show data contents */
+    function showDataContent(dataIndex) {
+        const elementToShow = document.getElementById('data_content_' + dataIndex)
+        if (elementToShow) {
+            elementToShow.style.visibility = 'visible'
+            elementToShow.style.opacity = '1'
+        }
     }
 
 })
