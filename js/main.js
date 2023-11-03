@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', function () {
     const chooseLanguage = document.getElementById('id_change_language')
 
     chooseLanguage.addEventListener('focus', function () {
-        chooseLanguage.style.backgroundColor = '#e32121'
+        chooseLanguage.style.backgroundColor = '#ac0000'
         chooseLanguage.style.color = 'white'
     })
 
