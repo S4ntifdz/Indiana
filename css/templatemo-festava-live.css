@@ -1103,6 +1103,70 @@ strong {
   }
 }
 
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden; 
+  }
+
+  .site-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .site-footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-overlay + .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ticket-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .artists-thumb {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .pricing-thumb {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .schedule-table th,
+  .schedule-table tr,
+  .schedule-table td {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ticket-form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .custom-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .schedule-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .sticky-wrapper {
     position: absolute;
@@ -1130,5 +1194,67 @@ strong {
 
   h5 {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .site-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .site-footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-overlay + .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ticket-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .artists-thumb {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .pricing-thumb {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .schedule-table th,
+  .schedule-table tr,
+  .schedule-table td {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ticket-form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .custom-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .schedule-section {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
