@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', function () {
     navItems.forEach(function(item, index) {
         item.addEventListener('click', function () {
             if (index >= 1) {
-                window.location.href = 'index2.html'
+                window.location.href = `index2.html?selected=${index}`
             }
         })
     })

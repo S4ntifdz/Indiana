@@ -212,12 +212,4 @@ input.check-toggle-round-flat:checked + label:after {
   margin-top: 2%;
   font-size: 50px;
 }
-
-#data_content_sales,
-#data_content_gen_program,
-#data_content_catalogue,
-#data_content_meat_zone {
-  visibility: hidden;
-  opacity: 0;
-}
 /* ----- index2.html ----- */
