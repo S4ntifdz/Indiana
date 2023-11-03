@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', function () {
     const chooseLanguage = document.getElementById('id_change_language')
 
     chooseLanguage.addEventListener('focus', function () {
-        chooseLanguage.style.backgroundColor = '#e32121'
+        chooseLanguage.style.backgroundColor = '#ac0000'
         chooseLanguage.style.color = 'white'
     })
 
@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', function () {
     navItems.forEach(function(item, index) {
         item.addEventListener('click', function () {
             if (index >= 1) {
-                window.location.href = 'index2.html'
+                window.location.href = `index2.html?selected=${index}`
             }
         })
     })
