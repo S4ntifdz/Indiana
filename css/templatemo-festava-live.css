@@ -689,6 +689,11 @@ strong {
   margin-bottom: 30px;
 }
 
+.artists-thumb img {
+  width: 400px;
+  height: 400px;
+}
+
 .artists-image {
   border-radius: var(--border-radius-medium);
   width: 100%;
