@@ -57,4 +57,36 @@ window.addEventListener('DOMContentLoaded', function () {
     })
     /* END - REDIRECTS */
 
+$(document).ready(function() {
+    let currentIndex = 0;
+    const slides = $('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+      slides.hide();
+      slides.eq(index).show();
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      showSlide(currentIndex);
+    }
+
+    function autoAdvance() {
+      nextSlide();
+      setTimeout(autoAdvance, 3000);
+    }
+
+    // Iniciar el temporizador automático
+    autoAdvance();
+
+    // Manejar el evento de clic en el botón "Siguiente"
+    $('#nextButton').on('click', function() {
+      nextSlide();
+    });
+  });
+
 })
+
+
+
