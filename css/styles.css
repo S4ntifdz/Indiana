@@ -215,19 +215,19 @@ input.check-toggle-round-flat:checked + label:after {
 /* ----- index2.html ----- */
 
 /* Carousel */
-.slider-container {
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
+.about-section-index2 {
+  background-color: #717171;
+  background-repeat: no-repeat;
+  background-size: cover;
+   
 }
 
-.slider {
-  display: flex;
-  transition: transform 1s ease-in-out;
+.section-padding-index2 {
+  padding-top: 65px;
+  padding-bottom: 100px;
 }
-
-.slide {
-  min-width: 100%;
-  flex-shrink: 0;
-  height: auto;
+.refill {
+  width: 100%;
+  height: 8em;
+  background-color: black;
 }

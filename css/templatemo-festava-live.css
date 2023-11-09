@@ -562,32 +562,38 @@ strong {
 /*---------------------------------------
   HERO        
 -----------------------------------------*/
-.hero-section {
+.hero-section,.hero-section2 {
   position: relative;
   overflow: hidden;
   padding-top: 100px;
+  bottom: 0;
   /* height: calc(100vh - 51px); */
   height: calc(100vh);
+    background-color: black;
+}
+.hero-section2{
+  margin-bottom: 1000px;
+  
 }
 
-.hero-section small {
+.hero-section small , .hero-section2 small{
   color: var(--white-color);
   text-transform: uppercase;
 }
 
-.hero-section .section-overlay {
+.hero-section .section-overlay, .hero-section2 .section-overlay {
   z-index: 2;
   opacity: 0.45;
 }
 
-.hero-section .container {
+.hero-section .container, .hero-section2 .container {
   position: relative;
   z-index: 2;
   height: 100%;
   padding-bottom: 50px;
 }
 
-.hero-section .container .row {
+.hero-section .container .row, .hero-section2 .container .row {
   height: 100%;
 }
 
@@ -1059,6 +1065,7 @@ strong {
   
   .navbar {
     background-color: var(--navbar-responsive-color);
+    z-index: 9;
   }
 
   .navbar-expand-lg .navbar-nav {
