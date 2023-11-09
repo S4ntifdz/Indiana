@@ -414,18 +414,22 @@ strong {
     height: 100%;
   }
 }
-.text-video-link{
+.text-video-link {
   font-size: 1.1em;
-  color: #363a3e ;
+  color: #363a3e;
+  cursor: pointer;
 }
-.text-video-link:hover{
+.text-video-link:hover {
   font-size: 1.5em;
   color: #ac0000;
 }
-.about-us-link{
+
+#see_more_about_us {
   font-size: 1.5em;
   color: var(--primary-color);
 }
+
+
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
