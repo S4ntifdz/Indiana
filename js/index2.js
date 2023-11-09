@@ -96,5 +96,44 @@ window.addEventListener('DOMContentLoaded', function () {
             elementToShow.style.opacity = '1'
         }
     }
+    
+
+
+
+
+
+    /* BEGIN - HIDE/SHOW DATA CONTENTS BY URL */
+
+    $(document).ready(function() {
+        let currentIndex = 0;
+        const slides = $('.slide');
+        const totalSlides = slides.length;
+  
+        function showSlide(index) {
+          slides.hide();
+          slides.eq(index).show();
+        }
+  
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % totalSlides;
+          showSlide(currentIndex);
+        }
+  
+        function autoAdvance() {
+          nextSlide();
+          setTimeout(autoAdvance, 2000);
+        }
+  
+        // Iniciar el temporizador automático
+        autoAdvance();
+  
+        // Manejar el evento de clic en el botón "Siguiente"
+        $('#nextButton').on('click', function() {
+          nextSlide();
+        });
+      });
 
 })
+
+
+
