@@ -246,3 +246,25 @@ input.check-toggle-round-flat:checked + label:after {
   background-color: black;
 
 }
+/* Apartado de Catalogo Index2 */
+.divs-parrafo{
+  font-size: 25px;
+}
+.catalogo-img{
+  border-radius: 50px ;
+  width: 800px;
+  height: 500px;
+  -webkit-border-radius: 50px ;
+  -moz-border-radius: 50px ;
+  -ms-border-radius: 50px ;
+  -o-border-radius: 50px ;
+}
+.programa-genetico-img{
+  border-radius: 50px;
+  width: 800px;
+  height: 500px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
