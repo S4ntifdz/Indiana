@@ -198,7 +198,6 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .data_content_by_link {
-  padding-top: 2%;
   position: absolute;
   margin-top: 2%;
   width: 100%;
@@ -210,8 +209,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .data_content_by_link p {
-  margin-top: 2%;
-  font-size: 50px;
+  font-size: 25px;
 }
 /* ----- index2.html ----- */
 
@@ -220,7 +218,7 @@ input.check-toggle-round-flat:checked + label:after {
   background-color: #717171;
   background-repeat: no-repeat;
   background-size: cover;
-   
+  
 }
 
 .section-padding-index2 {
@@ -250,6 +248,13 @@ input.check-toggle-round-flat:checked + label:after {
 .divs-parrafo{
   font-size: 25px;
 }
+
+.divs-parrafo p {
+  position: relative;
+  left: 5%;
+  width: 90%;
+}
+
 .catalogo-img{
   border-radius: 50px ;
   width: 800px;
