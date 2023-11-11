@@ -23,7 +23,7 @@ https://templatemo.com/tm-583-festava-live
   --p-color:                      #717275;
   --border-color:                 #7fffd4;
   --link-hover-color:             #e1be3f;
-  --navbar-responsive-color:      #c8c8c800;
+  --navbar-responsive-color:      #00000000;
 /* --body-font-family:             'Outfit', sans-serif;  */
 
 --body-font-family: 'Martian Mono', monospace;
@@ -1067,20 +1067,25 @@ strong {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  
+
   .navbar {
     background-color: var(--navbar-responsive-color);
+    transition: background-color 0.3s;
     z-index: 9;
-  }
+}
 
-  .navbar-expand-lg .navbar-nav {
-    padding-bottom: 30px;
-  }
+.navbar-expand-lg .navbar-nav, .navbar-expand-lg .navbar {
+    background-color: #53525200;
+}
+.navbar.navbar-expand-lg{
+  background-color: #000000;
+}
+.navbar-expand-lg .navbar-nav .nav-link,
+.navbar-expand-lg .navbar-nav .nav-link2 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
 
-  .navbar-expand-lg .navbar-nav .nav-link,
-  .navbar-expand-lg .navbar-nav .nav-link2 {
-    padding: 0;
-  }
 
   .hero-section {
     padding-top: 150px;
