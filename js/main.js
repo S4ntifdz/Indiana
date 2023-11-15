@@ -3,11 +3,6 @@ window.addEventListener('DOMContentLoaded', function () {
     /* BEGIN - TRANSLATIONS */
     const chooseLanguage = document.getElementById('id_change_language')
 
-    chooseLanguage.addEventListener('focus', function () {
-        chooseLanguage.style.backgroundColor = '#ac0000'
-        chooseLanguage.style.color = 'white'
-    })
-
     chooseLanguage.addEventListener('change', changeLanguage)
 
     function changeLanguage() {
