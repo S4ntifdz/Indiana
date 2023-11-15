@@ -267,12 +267,12 @@ input.check-toggle-round-flat:checked + label:after {
     margin: 0 auto;
     justify-content: center;
     max-width: 1200px;
-    gap: 24px;
+    gap: 25px;
 }
  
 .articles article {
     max-width: 320px;
-    cursor: pointer;
+    cursor:default;
     position: relative;
     display: block;
     transition: all 0.4s ease-in-out;
@@ -293,7 +293,10 @@ input.check-toggle-round-flat:checked + label:after {
     color: var(--secondary);
     transition: color 0.3s ease-out;
 }
-  
+.articles article h6 {
+  margin: 0 0 18px 0;
+  font-size: 1rem;
+}
   
 .articles article img {
     max-width: 100%;
@@ -326,3 +329,7 @@ input.check-toggle-round-flat:checked + label:after {
     transform: scale(1.5); 
 }
 
+.team-description{
+  font-style: italic;
+  
+}
