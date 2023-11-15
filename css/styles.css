@@ -173,6 +173,20 @@ input.check-toggle-round-flat:checked + label:after {
 .data_content_by_link p {
   font-size: 25px;
 }
+
+.media_videos {
+  margin-bottom: 15em;
+  border-radius: 1.5em;
+}
+
+.media_videos:first-of-type {
+  margin-top: 3.5em;
+}
+
+.media_videos:last-of-type {
+  margin-bottom: 0;
+}
+
 /* ----- index2.html ----- */
 
 /* Carousel */
