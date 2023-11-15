@@ -76,6 +76,10 @@ window.addEventListener('DOMContentLoaded', function () {
                 hideDataContent(dataContents)
                 showDataContent(index)
             }
+            if (index == 6) {
+                hideDataContent(dataContents)
+                showDataContent(index)
+            }
         })
     })
     /* END - HIDE/SHOW NAVBAR ITEMS COLOR AND DATA CONTENTS */
