@@ -326,7 +326,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .articles article:hover img {
-    transform: scale(1.5); 
+    transform: scale(1.2); 
 }
 
 .team-description{

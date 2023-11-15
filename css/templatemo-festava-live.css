@@ -404,9 +404,22 @@ strong {
   width: 100%;
   height: 100%;
 }
-
+.beef-section{
+  cursor: pointer;
+  border: #000000 0.15em solid;
+  filter:sepia(55%);
+  width: 100%;
+  height: 100%;
+}
 .artists-thumb:hover{
   .video-section{
+    cursor: pointer;
+    border: #000000 0.15em solid;
+    filter:sepia(55%);
+    width: 100%;
+    height: 100%;
+  }
+  .beef-section{
     cursor: pointer;
     border: #000000 0.15em solid;
     filter:sepia(55%);
@@ -1084,6 +1097,7 @@ strong {
 .navbar-expand-lg .navbar-nav .nav-link2 {
     padding-left: 10px;
     padding-bottom: 10px;
+    
 }
 
 
