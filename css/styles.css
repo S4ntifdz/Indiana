@@ -332,4 +332,11 @@ input.check-toggle-round-flat:checked + label:after {
 .team-description{
   font-style: italic;
   
+  
+}
+.beef-description{
+  background-color: rgb(252, 241, 226);
+  width: 100%;
+  height: 100%;
+  box-shadow: #717171 0px 0px 10px 0px;
 }
