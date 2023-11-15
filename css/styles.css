@@ -215,8 +215,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 .slide img {
   margin-top: 5.25em;
-  margin-left: 2.5em;
-  margin-right: 2.5em;
+
   width: 40em;
   height: 25.5em;
 }
