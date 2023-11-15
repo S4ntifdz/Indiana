@@ -1,8 +1,9 @@
 {
-    "company_name": "Cabaña La Indiana",
     "company_contact": "Contactenos",
     "home": "Inicio",
-    "about_company": "Quienes somos",
+    "about_company": "Nosotros",
     "sales": "Ventas",
+    "gen_program": "Programa Genetico",
+    "catalogue": "Catalogo",
     "meat_zone": "División Carne"
 }

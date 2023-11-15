@@ -1,30 +1,17 @@
 window.addEventListener('DOMContentLoaded', function () {
 
-    /* BEGIN - MODALS */
-    const modal = document.getElementById('id_modal')
-    const closeModalButton = document.getElementById('id_modal_button')
-    const backgroundModal = document.getElementById('id_background_modal')
-
-    backgroundModal.showModal()
-    modal.showModal()
-
-    closeModalButton.addEventListener('click', function () {
-        modal.style.visibility = 'hidden'
-        modal.style.opacity = 0
-        modal.close()
-
-        backgroundModal.style.visibility = 'hidden'
-        backgroundModal.style.opacity = 0
-        backgroundModal.close()
-    })
-    /* END - MODALS */
-
     /* BEGIN - TRANSLATIONS */
     const chooseLanguage = document.getElementById('id_change_language')
+
+    chooseLanguage.addEventListener('focus', function () {
+        chooseLanguage.style.backgroundColor = '#ac0000'
+        chooseLanguage.style.color = 'white'
+    })
+
     chooseLanguage.addEventListener('change', changeLanguage)
 
     function changeLanguage() {
-        currentLanguage = chooseLanguage.value;
+        currentLanguage = chooseLanguage.value
         path = 'i18n/' + currentLanguage + '.json'
 
         fetch(path)
@@ -39,4 +26,48 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     /* END - TRANSLATIONS */
 
+    /* BEGIN - REDIRECTS */
+    const navItems = Array.from(document.getElementsByClassName('nav-link'))
+
+    navItems.forEach(function(item, index) {
+        item.addEventListener('click', function () {
+            if (index >= 1) {
+                window.location.href = `index2.html?selected=${index}`
+            }
+        })
+    })
+    /* END - REDIRECTS */
+
+$(document).ready(function() {
+    let currentIndex = 0;
+    const slides = $('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+      slides.hide();
+      slides.eq(index).show();
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      showSlide(currentIndex);
+    }
+
+    function autoAdvance() {
+      nextSlide();
+      setTimeout(autoAdvance, 3000);
+    }
+
+    // Iniciar el temporizador automático
+    autoAdvance();
+
+    // Manejar el evento de clic en el botón "Siguiente"
+    $('#nextButton').on('click', function() {
+      nextSlide();
+    });
+  });
+
 })
+
+
+

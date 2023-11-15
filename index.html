@@ -4,38 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content=""> 
     <title>Cabaña La indiana</title>
+    <link rel="shortcut icon" href="images/shortcut-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700&family=Noto+Serif+Makasar&family=Oswald:wght@500&family=Overlock+SC&display=swap" rel="stylesheet">   <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700&family=Noto+Serif+Makasar&family=Oswald:wght@500&family=Overlock+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700&family=Noto+Serif+Makasar&family=Oswald:wght@500&family=Overlock+SC&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-icons.css" rel="stylesheet">
     <link href="css/templatemo-festava-live.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="shortcut icon" href="/images/original-calco-12cm.png" type="image/x-icon">
 </head>
 <body>
     <main>
-        <dialog id="id_background_modal" class="background_front_modal"></dialog>
-        <dialog id="id_modal" class="front_modal">
-            <img src="/images/original-calco-12cm.png" alt="logo">
-            <button id="id_modal_button"><i class="bi bi-x-lg"></i></button>
-        </dialog>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                
                 <img src="images/logo-laindiana-sin-fondo.png"class="footer-logo-calco" >
-
-                <a href="#nav-ContactMap-tab" class="btn custom-btn d-lg-none ms-auto me-4">Contáctenos</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
                         <li class="nav-item">
@@ -43,35 +38,37 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3" data-translate="about_company"><strong>Quienes somos</strong></a>
+                            <a class="nav-link click-scroll" data-translate="about_company"><strong>Nosotros</strong></a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4" data-translate="sales"><strong>Ventas</strong></a>
+                            <a class="nav-link click-scroll" data-translate="sales"><strong>Ventas</strong></a>
                         </li>
 
                         <li class="nav-item">
+
                             <a class="nav-link click-scroll" href="#section_4" data-translate="meat_zone"><strong>Division exportacion</strong></a>
+
+                            <a class="nav-link click-scroll" data-translate="gen_program"><strong>Programa Genetico</strong></a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" data-translate="catalogue"><strong>Catalogo</strong></a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" data-translate="meat_zone"><strong>División Carne</strong></a>
+
                         </li>
 
                     </ul>
 
-                    <a href="#nav-ContactMap-tab" class="btn custom-btn d-lg-block d-none" data-translate="company_contact">Contactenos</a>
+                    <a href="#contact-section" class="btn custom-btn d-lg-block d-none" data-translate="company_contact">Contactenos</a>
 
                     <select id="id_change_language" class="btn custom-btn-lng d-lg-block d-none">
-                        <option value="es" >Español</option>
+                        <option value="es">Español</option>
                         <option value="en">English</option>
                     </select>
-
-                        <!-- #TODO boton de lenguaje tipo switch - retirar si no se usa  -->
-                        <!-- <div class="switch">
-                            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-                            <label for="language-toggle"></label>
-                            <span class="on">ESP</span>
-                            <span class="off">ENG</span>
-                        </div> -->
-
-
 
                 </div>
             </div>
@@ -89,9 +86,9 @@
 
 
                         <div class="location-wrap mx-auto py-3 py-lg-0">
-                            <a href="#nav-ContactMap-tab">
+                            <a href="#nav-ContactMap-tab" >
                             <h5 class="text-white">
-                                <i class="custom-icon bi-geo-alt me-2"></i>
+                                <i class="custom-icon bi-geo-alt-fill me-2"></i>
                                 Trenque Lauquen, Buenos Aires, Argentina
                             </h5></a>
                         </div>
@@ -99,14 +96,6 @@
                         <div class="social-share">
                             <ul class="social-icon d-flex align-items-center justify-content-center">
                                 <span class="text-white me-3"></span>
-
-                                <li class="social-icon-item">
-                                    <a href="https://www.facebook.com/cabana.laindiana.98" class="social-icon-link">
-                                        <span class="bi-facebook"></span>
-                                    </a>
-                                </li>
-
-
                                 <li class="social-icon-item">
                                     <a href="https://www.instagram.com/cabanalaindiana/" class="social-icon-link">
                                         <span class="bi-instagram"></span>
@@ -130,72 +119,62 @@
         <section class="about-section section-padding" id="section_2">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
                         <div class="services-info">
                             <h2 class="text-white mb-4">Acerca de nosotros</h2>
-
-                            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                            <h6 class="text-white mt-4">Lorem ipsum dolor sit amet</h6>
-
-                            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-
-                            <h6 class="text-white mt-4">Lorem ipsum dolor sit amet</h6>
-
-                            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <p class="text-white">En Cabaña La Indiana nos dedicamos a la cría y venta de genética Angus de calidad superior, enfocándose en la producción de toros y vaquillonas adaptados a las exigencias de los campos ganaderos de la Pampa húmeda. Con más de dos décadas de experiencia, hemos comercializado una amplia cantidad de reproductores Angus, contribuyendo a la mejora de la producción ganadera en la región.</p>
+                            <h6 class="text-white mt-4">Enfocados en la perfeccion</h6>
+                            <p class="text-white">Nuestro enfoque se centra en la selección de líneas maternas con facilidad de parto y consistencia genética, garantizando un biotipo moderado y carnicero.</p>
+                            <h6 class="text-white mt-4">La innovacion, nuestro compromiso</h6>
+                            <p class="text-white">Trabajamos en estrecha colaboración con expertos en el campo y seguimos innovando para ofrecer a nuestros clientes una genética que aumente la rentabilidad de sus operaciones ganaderas y fomente la exportación de carne vacuna de alta calidad a nivel mundial.                            </p>
+                            <a href="index2.html?selected=1" class="text-video-link" id="see_more_about_us">Ver mas</a>
                         </div>
                     </div>
-
                     <div class="col-lg-6 col-12">
                         <div class="about-text-wrap">
-                            <img src="images/Vaca1.jpg" class="about-image img-fluid">
-
+                            <div class="slider-container">
+                                <div class="slider">
+                                    <div class="slide"><img src="images/img1.jpg" alt="Imagen 1"
+                                            class="about-image img-fluid"></div>
+                                    <div class="slide"><img src="images/img2.jpg" alt="Imagen 2"
+                                            class="about-image img-fluid"></div>
+                                    <div class="slide"><img src="images/img3.jpg" alt="Imagen 3"
+                                            class="about-image img-fluid"></div>
+                                    <div class="slide"><img src="images/img4.jpg" alt="Imagen 4"
+                                                class="about-image img-fluid"></div>
+                                    <div class="slide"><img src="images/img5.jpg" alt="Imagen 5"
+                                                    class="about-image img-fluid"></div>
+                                    <div class="slide"><img src="images/img6.jpg" alt="Imagen 3"
+                                                class="about-image img-fluid"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
-
-        <section class="artists-section section-padding" id="section_3">
+        <section class="pricing-section section-padding section-bg" id="section_3">
             <div class="container">
                 <div class="row justify-content-center">
-
                     <div class="col-12 text-center">
-                        <h2 class="mb-4">Programa genético</h1>
+                        <div class>
+                        <img src="images/icon-cow-face-black.png" class="icon-cow">
                     </div>
+                        <h2 class="mb-4-slogan">Genética Angus para un futuro ganadero sustentable en la Pampa húmeda y más allá.</h1>
+                </div>
 
                     <div class="col-lg-5 col-12">
                         <div class="artists-thumb">
                             <div class="artists-image-wrap">
-                                <img src="images/vaca4.jpg"
-                                    class="artists-image img-fluid">
+                                <video autoplay="True" loop="True" muted="True" class="video-section">
+                                    <source src="video/video-links/Project 4.mov" type="video/mp4">
+                                    Parece que tu navegador no soporta la reproduccion de videos.
+                                </video>
                             </div>
-
                             <div class="artists-hover">
-                                <p>
-                                    <strong>Nombre:</strong>
-                                    Luis
-                                </p>
-
-                                <p>
-                                    <strong>Edad:</strong>
-                                    7 años
-                                </p>
-
-                                <p>
-                                    <strong>Peso:</strong>
-                                    1009kg
-                                </p>
-
-                                <hr>
-
-                                <p class="mb-0">
-                                    <strong>Interesados</strong>
-                                    <a href="#">Ofertar</a>
-                                </p>
+                                <h5 class="text-white mb-4">Catalogo anual</h2>
+                                <a href="index2.html?selected=4" class="text-video-link">Ver mas</a>
                             </div>
                         </div>
                     </div>
@@ -203,127 +182,83 @@
                     <div class="col-lg-5 col-12">
                         <div class="artists-thumb">
                             <div class="artists-image-wrap">
-                                <img src="images/vaca5.jpg"
-                                    class="artists-image img-fluid">
+                                <video autoplay="True" loop="True" muted="True" class="video-section">
+                                    <source src="video/video-links/Project 3.mov" type="video/mp4">
+                                    Parece que tu navegador no soporta la reproduccion de videos.
+                                </video>
                             </div>
-
                             <div class="artists-hover">
-                                <p>
-                                    <strong>Nombre: </strong>
-                                    Pancha
-                                </p>
-
-                                <p>
-                                    <strong>Edad</strong>
-                                    6 Años
-                                </p>
-
-                                <p>
-                                    <strong>Peso:</strong>
-                                    940kg
-                                </p>
-
-                                <hr>
-
-                                <p class="mb-0">
-                                    <strong>Interesados</strong>
-                                    <a href="#">Ofertar</a>
-                                </p>
+                                <h5 class="text-white mb-4">Division Carne</h2>
+                                <a href="index2.html?selected=5" class="text-video-link">Ver mas</a>
                             </div>
                         </div>
-
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 col-12">
                         <div class="artists-thumb">
-                            <img src="images/vaca1.jpg"
-                                class="artists-image img-fluid">
-
+                            <div class="artists-image-wrap">
+                                                                
+                                <video autoplay="True" loop="True" muted="True" class="video-section">
+                                    <source src="video/video-links/Project 2.mov" type="video/mp4">
+                                    Parece que tu navegador no soporta la reproduccion de videos.
+                                </video>
+                            </div>
                             <div class="artists-hover">
-                                <p>
-                                    <strong class="cow-name">Nombre:</strong>
-                                    Oscar
-                                </p>
+                                <h5 class="text-white mb-4">Programa genetico</h2>
+                                <a href="index2.html?selected=3" class="text-video-link">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
 
-                                <p>
-                                    <strong>Edad:</strong>
-                                    5 Años
-                                </p>
-
-                                <p>
-                                    <strong>Peso:</strong>
-                                    800kg
-                                </p>
-
-                                <hr>
-
-                                <p class="mb-0">
-                                    <strong>Interesados</strong>
-                                    <a href="#">Ofertar</a>
-                                </p>
+                    <div class="col-lg-5 col-12">
+                        <div class="artists-thumb">
+                            <div class="artists-image-wrap">
+                        
+                                <video autoplay="True" loop="True" muted="True" class="video-section">
+                                    <source src="video/video-links/Project 5.mov" type="video/mp4">
+                                    Parece que tu navegador no soporta la reproduccion de videos.
+                                </video>
+                            </div>
+                            <div class="artists-hover">
+                                <h5 class="text-white mb-4">Ventas</h2>
+                                <a href="index2.html?selected=2" class="text-video-link">Ver mas</a>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-        </section>
+            </section>
 
-
-        <section class="schedule-section section-padding" id="section_4">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-12 text-center">
-                        <a href="javascript:window.open('pdf/Catalogo.pdf','mywindowtitle','width=500,height=150')"><h2 class="text-white mb-4">Ver catalogo de ventas anual</h2></a>
-
-                            <div class="table-responsive">
-                                <table class="schedule-table table table-dark">
-                                    <thead>
-                                    </thead>
-
-                                    <tbody>
-                                    
-                                    </tbody>
-                                </table>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="pricing-section section-padding section-bg" id="section_5">
-            <div class="container">
-                <div class="row">
 
                     <div class="col-lg-8 col-12 mx-auto">
                         <h2 class="text-center mb-4">Division exportacion</h2>
                         <h2 class="text-center mb-2">pcossio@cabanalaindiana.com</h2>
                     </div>
 
-                    <div class="col-lg-6 col-12">
-                    </div>
 
-                </div>
-            </div>
-        </section> 
+
 
 
         <section class="contact-section section-padding" id="section_6">
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-8 col-12 mx-auto">
-                        <h2 class="text-center mb-4">Contáctanos</h2>
+                    <div class="col-lg-8 col-12 mx-auto" id="contact-section">
+                        <h2 class="text-center mb-4">Contactenos</h2>
 
                         <nav class="d-flex justify-content-center">
                             <div class="nav nav-tabs align-items-baseline justify-content-center" id="nav-tab"
                                 role="tablist">
-                                <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab"
+                                <button class="nav-link-contact-map active" id="nav-ContactForm-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-ContactForm" type="button" role="tab"
                                     aria-controls="nav-ContactForm" aria-selected="false">
                                     <h5>Formulario de contacto</h5>
                                 </button>
 
-                                <button class="nav-link" id="nav-ContactMap-tab" data-bs-toggle="tab"
+                                <button class="nav-link-contact-map" id="nav-ContactMap-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-ContactMap" type="button" role="tab"
                                     aria-controls="nav-ContactMap" aria-selected="false">
                                     <h5>Ubicacion</h5>
@@ -356,8 +291,8 @@
                                         <textarea name="contact-message" rows="3" class="form-control"
                                             id="contact-message" placeholder="Mensaje"></textarea>
 
-                                        <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                                            <input type="submit" value="Enviar" onclick=mailto_link()>
+                                        <div class="">
+                                            <input type="submit" value="Enviar" class="btn-form" onclick=mailto_link()>
                                         </div>
                                     </div>
                                 </form>
@@ -414,6 +349,45 @@
                            mail de contacto: info@cabanalaindiana.com
                         </a>
                     </p>
+
+                <div class="col-lg-6 col-12">
+                    <h5 class="site-footer-title ">Links de interes</h5>
+                    <a href="www.colomboymagliano.com.ar" class="site-footer-link">
+                        colomboymagliano.com.ar
+                    </a>
+                    <br><br>
+                    <h5 class="site-footer-title ">Email</h5>
+                    <p class="text-white d-flex">
+                        <a href="mailto:hello@company.com" class="site-footer-link">
+                            email@email.com
+                        </a>
+                    </p>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <h5 class="site-footer-title mb-3">Telefono</h5>
+
+                    <p class="text-white d-flex mb-1">
+                        <p class="site-footer-link">
+                        Av. de Mayo 580, 1 piso. (1084) CABA
+                        Argentina
+                        
+                        <br>
+                        +54 11 4334 9511
+                        <br>
+                        +54 9 11 5408 2930
+                        </p>
+                        <br>
+                        <p  class="site-footer-link">
+                            Monferrand 614. (6400) Trenque Lauquen
+                            Argentina 
+                            <br>
+                            +54 9 2392 519025
+                            <br>
+                            +54 9 2392 62 7276</p>
+                    </p>
+
+
                 </div>
 
                
@@ -448,11 +422,7 @@
         </div>
     </footer>
 
-    <!--
 
-T e m p l a t e M o
-
--->
 
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>

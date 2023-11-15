@@ -12,19 +12,18 @@ https://templatemo.com/tm-583-festava-live
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #F8CB2E;
-  /* --secondary-color:              #EE5007; */
-  --secondary-color:              #ee0707;
+  --primary-color:                #e1be3f;
+  --secondary-color:              #ac0000;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #EE5007;
-  --custom-btn-bg-hover-color:    #c01f27;
-  --custom-btn-lng-color:         #e32121;/*<---- button lenguage */
-  --custom-btn-lng-hover-color:   #c01f27;
+  --custom-btn-bg-color:          #ac0000;
+  --custom-btn-bg-hover-color:    #820000;
+  --custom-btn-lng-color:         #ac0000;/*<---- button lenguage #e32121 */
+  --custom-btn-lng-hover-color:   #820000; /* #c01f27 */ /*Color de hover de botones*/
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #7fffd4;
-  --link-hover-color:             #B22727;
-  --navbar-responsive-color:      #c8c8c800;
+  --link-hover-color:             #e1be3f;
+  --navbar-responsive-color:      #00000000;
 /* --body-font-family:             'Outfit', sans-serif;  */
 
 --body-font-family: 'Martian Mono', monospace;
@@ -56,7 +55,9 @@ body {
   font-family: var(--body-font-family); 
 }
 
-
+textarea {
+  resize: none;
+}
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
@@ -222,7 +223,7 @@ strong {
   SECTION               
 -----------------------------------------*/
 .section-padding {
-  padding-top: 100px;
+  padding-top: 65px;
   padding-bottom: 100px;
 }
 
@@ -257,22 +258,32 @@ strong {
   border-bottom: 0;
   padding: 15px;
 }
-
-.nav-tabs .nav-link {
+.nav-tabs .nav-link-contact-map,
+.nav-tabs .nav-link,
+.nav-tabs .nav-link2 {
   border-radius: var(--border-radius-large);
   border: 0;
   padding: 15px 25px;
   transition: all 0.3s;
 }
 
-.nav-tabs .nav-link:first-child {
+.nav-tabs .nav-link-contact-map:first-child,
+.nav-tabs .nav-link:first-child,
+.nav-tabs .nav-link2:first-child {
   margin-right: 15px;
 }
-
+.nav-tabs .nav-item.show.nav-link-contact-map,
+.nav-tabs .nav-link-contact-map.active,
+.nav-tabs .nav-link-contact-map:focus, 
+.nav-tabs .nav-link-contact-map:hover,
 .nav-tabs .nav-item.show .nav-link, 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:focus, 
-.nav-tabs .nav-link:hover {
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-item.show .nav-link2, 
+.nav-tabs .nav-link2.active,
+.nav-tabs .nav-link2:focus, 
+.nav-tabs .nav-link2:hover {
   background: var(--white-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
   color: var(--primary-color);
@@ -283,9 +294,15 @@ strong {
   margin-bottom: 0;
 }
 
+.nav-tabs .nav-link-contact-map.active h5,
+.nav-tabs .nav-link-contact-map:focus h5,
+.nav-tabs .nav-link-contact-map:hover h5,
 .nav-tabs .nav-link.active h5,
 .nav-tabs .nav-link:focus h5, 
-.nav-tabs .nav-link:hover h5 {
+.nav-tabs .nav-link:hover h5,
+.nav-tabs .nav-link2.active h5,
+.nav-tabs .nav-link2:focus h5, 
+.nav-tabs .nav-link2:hover h5  {
   color: var(--primary-color);
 }
 
@@ -318,6 +335,22 @@ strong {
   color: var(--white-color);
 }
 
+.btn-form{
+  background: var(--white-color);
+  border:#908f8f 0.1em solid;
+  border-radius: var(--border-radius-large);
+  color: #908f8f;
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+  transition: all 0.3s;
+  padding: 10px 20px;
+}
+.btn-form:hover{
+  background: var(--custom-btn-bg-hover-color);
+  color: var(--white-color);
+}
+
 .custom-border-btn {
   background: transparent;
   border: 2px solid var(--custom-btn-bg-color);
@@ -325,6 +358,7 @@ strong {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
+.navbar-expand-lg .navbar-nav .nav-link2.custom-btn:hover,
 .custom-border-btn:hover {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
@@ -355,7 +389,6 @@ strong {
 -----------------------------------------*/
 .video-wrap {
   z-index: -100;
-  
 }
 
 .custom-video {
@@ -365,6 +398,35 @@ strong {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.video-section{
+  border-radius: var(--border-radius-medium);
+  width: 100%;
+  height: 100%;
+}
+
+.artists-thumb:hover{
+  .video-section{
+    cursor: pointer;
+    border: #000000 0.15em solid;
+    filter:sepia(55%);
+    width: 100%;
+    height: 100%;
+  }
+}
+.text-video-link {
+  font-size: 1.1em;
+  color: #363a3e;
+  cursor: pointer;
+}
+.text-video-link:hover {
+  font-size: 1.5em;
+  color: #ac0000;
+}
+
+#see_more_about_us {
+  font-size: 1.5em;
+  color: var(--primary-color);
 }
 
 
@@ -405,13 +467,15 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
+.navbar-expand-lg .navbar-nav .nav-link,
+.navbar-expand-lg .navbar-nav .nav-link2 {
   border-radius: var(--border-radius-large);
   margin: 0px;
   padding: 0px 20px;
 }
 
-.navbar-nav .nav-link {
+.navbar-nav .nav-link,
+.navbar-nav .nav-link2 {
   display: inline-block;
   color: var(--white-color);
   font-size: var(--p-font-size);
@@ -422,7 +486,9 @@ strong {
 }
 
 .navbar-nav .nav-link.active, 
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link2.active, 
+.navbar-nav .nav-link2:hover {
   color: var(--secondary-color);
 }
 
@@ -496,32 +562,38 @@ strong {
 /*---------------------------------------
   HERO        
 -----------------------------------------*/
-.hero-section {
+.hero-section,.hero-section2 {
   position: relative;
   overflow: hidden;
   padding-top: 100px;
+  bottom: 0;
   /* height: calc(100vh - 51px); */
   height: calc(100vh);
+    background-color: black;
+}
+.hero-section2{
+  margin-bottom: 1000px;
+  
 }
 
-.hero-section small {
+.hero-section small , .hero-section2 small{
   color: var(--white-color);
   text-transform: uppercase;
 }
 
-.hero-section .section-overlay {
+.hero-section .section-overlay, .hero-section2 .section-overlay {
   z-index: 2;
   opacity: 0.45;
 }
 
-.hero-section .container {
+.hero-section .container, .hero-section2 .container {
   position: relative;
   z-index: 2;
   height: 100%;
   padding-bottom: 50px;
 }
 
-.hero-section .container .row {
+.hero-section .container .row, .hero-section2 .container .row {
   height: 100%;
 }
 
@@ -539,6 +611,7 @@ strong {
 
 .about-image {
   border-radius: var(--border-radius-medium);
+  box-shadow: #000000 0.2em 0.2em 0.2em ;
   display: block;
 }
 
@@ -616,10 +689,15 @@ strong {
   margin-bottom: 30px;
 }
 
+.artists-thumb img {
+  width: 600px;
+  height: 400px;
+}
+
 .artists-image {
   border-radius: var(--border-radius-medium);
-  display: block;
   width: 100%;
+  height: 15em;
 }
 
 .artists-thumb:hover .artists-hover {
@@ -628,6 +706,7 @@ strong {
 }
 
 .artists-hover {
+  cursor:pointer;
   background-color: var(--primary-color);
   background-color: rgba(223, 223, 216, 0.564);
   border-radius: var(--border-radius-medium);
@@ -642,7 +721,6 @@ strong {
   right: 0;
   left: 0;
   opacity: 0;
-  
 }
 
 .artists-hover p strong {
@@ -745,7 +823,15 @@ strong {
   z-index: 2;
 }
 
-
+.mb-4-slogan{
+  margin-bottom:4.5rem !important;
+  font-family: 'Martian Mono', monospace;
+  font-family: 'Noto Serif Makasar', serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Overlock SC', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-weight: 200;
+}
 /*---------------------------------------
   PRICING              
 -----------------------------------------*/
@@ -981,18 +1067,25 @@ strong {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  
+
   .navbar {
     background-color: var(--navbar-responsive-color);
-  }
+    transition: background-color 0.3s;
+    z-index: 9;
+}
 
-  .navbar-expand-lg .navbar-nav {
-    padding-bottom: 30px;
-  }
+.navbar-expand-lg .navbar-nav, .navbar-expand-lg .navbar {
+    background-color: #53525200;
+}
+.navbar.navbar-expand-lg{
+  background-color: #000000;
+}
+.navbar-expand-lg .navbar-nav .nav-link,
+.navbar-expand-lg .navbar-nav .nav-link2 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
 
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0;
-  }
 
   .hero-section {
     padding-top: 150px;
@@ -1016,11 +1109,21 @@ strong {
   }
 
   .ticket-section {
-    padding-top: 130px;
+    padding-top: 130px; 
   }
 
   .ticket-form {
     padding: 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .data_content_by_link .programa-genetico-img{
+    width: 90%;
+    height: 80%;
+  }
+  .data_content_by_link .catalogo-img{
+    width: 90%;
+    height: 80%;
   }
 }
 
@@ -1028,6 +1131,78 @@ strong {
   .custom-btn {
     font-size: 14px;
     padding: 10px 20px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden; 
+  }
+
+  .site-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .site-footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-overlay + .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ticket-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .artists-thumb {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .pricing-thumb {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .schedule-table th,
+  .schedule-table tr,
+  .schedule-table td {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ticket-form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .custom-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .schedule-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .data_content_by_link .programa-genetico-img{
+    width: 80%;
+    height: 70%;
+  }
+  .data_content_by_link .catalogo-img{
+    width: 80%;
+    height: 70%;
   }
 }
 
@@ -1058,5 +1233,83 @@ strong {
 
   h5 {
     font-size: 20px;
+  }
+  .data_content_by_link .programa-genetico-img{
+    width: 80%;
+    height: 70%;
+  }
+  .data_content_by_link .catalogo-img{
+    width: 70%;
+    height: 60%;
+  }
+}
+@media screen and (max-width: 300px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .site-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .site-footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-overlay + .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ticket-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .artists-thumb {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .pricing-thumb {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .schedule-table th,
+  .schedule-table tr,
+  .schedule-table td {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ticket-form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .custom-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .schedule-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .data_content_by_link .programa-genetico-img{
+    width: 80%;
+    height: 50%;
+  }
+  .data_content_by_link .catalogo-img{
+    width: 60%;
+    height: 50%;
   }
 }
