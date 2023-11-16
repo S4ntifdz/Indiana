@@ -422,6 +422,9 @@ input.check-toggle-round-flat:checked + label:after {
   max-width: 100%; /* Ajusta el ancho máximo cuando se agranda */
   height: 300px; /* Ajusta la altura cuando se agranda */
 }
+h5{
+  color: rgb(171, 23, 23);
+}
 
 
 /* Media query para hacer la grilla responsive en pantallas pequeñas */
