@@ -374,7 +374,7 @@ input.check-toggle-round-flat:checked + label:after {
   
 }
 .beef-description{
-  background-color: rgb(252, 241, 226);
+  background-color: rgb(248, 239, 227);
   width: 100%;
   height: 100%;
   box-shadow: #717171 0px 0px 10px 0px;
@@ -390,10 +390,9 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 
-
 /* Estilo del contenedor de la sección de prensa */
 .seccion-prensa {
-  display: inline;
+  display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
@@ -401,40 +400,41 @@ input.check-toggle-round-flat:checked + label:after {
   gap: 25px;
 }
 
-/* Estilo de los iframes dentro de la grilla */
-.seccion-prensa iframe {
-  max-width: 280px; /* Ajusta el ancho máximo según tus necesidades */
+/* Estilo de los contenedores de iframe dentro de la grilla */
+.iframe-container {
+  flex: 0 0 calc(33.33% - 25px); /* Ajusta el ancho del contenedor según tus necesidades */
+  position: relative;
+}
+
+/* Estilo de los iframes dentro de los contenedores */
+.iframe-container iframe {
   width: 100%;
   height: 180px; /* Ajusta la altura según tus necesidades */
-  border: 0; /* Elimina el borde predeterminado de los iframes */
+  border: 0;
   cursor: pointer;
   transition: transform 0.4s ease-in-out;
-  border-radius: 16px; /* Añade esto para alinear desde la parte superior */
+  border-radius: 16px;
 }
 
 /* Al hacer clic en un iframe, agrandarlo */
-.seccion-prensa iframe:focus {
-  transform: scale(1.2); /* Puedes ajustar la escala según tus preferencias */
+.iframe-container iframe:focus {
+  transform: scale(1.2);
 }
 
-/* Ajusta el tamaño de la grilla cuando un iframe se agranda */
-.seccion-prensa iframe:focus {
-  max-width: 100%; /* Ajusta el ancho máximo cuando se agranda */
+/* Ajusta el tamaño del contenedor cuando un iframe se agranda */
+.iframe-container iframe:focus {
+  max-width: 100%;
   height: 300px; /* Ajusta la altura cuando se agranda */
 }
-h5{
-  color: rgb(171, 23, 23);
-}
-
 
 /* Media query para hacer la grilla responsive en pantallas pequeñas */
 @media screen and (max-width: 600px) {
   .seccion-prensa {
-    justify-content: flex-start; /* Alinea los elementos desde el principio */
+    justify-content: flex-start;
   }
 
-  .seccion-prensa iframe {
-    max-width: calc(50% - 12.5px); /* Ajusta el ancho máximo para pantallas pequeñas */
-    margin-bottom: 15px; /* Añade espacio entre los elementos */
+  .iframe-container {
+    flex: 0 0 calc(50% - 12.5px);
+    margin-bottom: 15px;
   }
 }
