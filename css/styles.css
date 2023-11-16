@@ -393,18 +393,16 @@ input.check-toggle-round-flat:checked + label:after {
 
 /* Estilo del contenedor de la sección de prensa */
 .seccion-prensa {
-  display:inline-flex;
+  display: inline;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
   max-width: 1200px;
   gap: 25px;
-  margin: 1%;
 }
 
 /* Estilo de los iframes dentro de la grilla */
 .seccion-prensa iframe {
-  
   max-width: 280px; /* Ajusta el ancho máximo según tus necesidades */
   width: 100%;
   height: 180px; /* Ajusta la altura según tus necesidades */
