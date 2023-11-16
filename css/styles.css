@@ -393,25 +393,25 @@ input.check-toggle-round-flat:checked + label:after {
 
 /* Estilo del contenedor de la sección de prensa */
 .seccion-prensa {
-  display: flex;
+  display:inline-flex;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
-  max-width: 1500px;
+  max-width: 1200px;
   gap: 25px;
+  margin: 1%;
 }
 
 /* Estilo de los iframes dentro de la grilla */
 .seccion-prensa iframe {
-  max-width: 320px; /* Ajusta el ancho máximo según tus necesidades */
+  
+  max-width: 280px; /* Ajusta el ancho máximo según tus necesidades */
   width: 100%;
   height: 180px; /* Ajusta la altura según tus necesidades */
   border: 0; /* Elimina el borde predeterminado de los iframes */
   cursor: pointer;
   transition: transform 0.4s ease-in-out;
-  border-radius: 16px; /* Ajusta el radio de borde según tus necesidades */
-  overflow: hidden;
-  vertical-align: top; /* Añade esto para alinear desde la parte superior */
+  border-radius: 16px; /* Añade esto para alinear desde la parte superior */
 }
 
 /* Al hacer clic en un iframe, agrandarlo */
@@ -425,9 +425,15 @@ input.check-toggle-round-flat:checked + label:after {
   height: 300px; /* Ajusta la altura cuando se agranda */
 }
 
+
 /* Media query para hacer la grilla responsive en pantallas pequeñas */
 @media screen and (max-width: 600px) {
+  .seccion-prensa {
+    justify-content: flex-start; /* Alinea los elementos desde el principio */
+  }
+
   .seccion-prensa iframe {
-      max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
+    max-width: calc(50% - 12.5px); /* Ajusta el ancho máximo para pantallas pequeñas */
+    margin-bottom: 15px; /* Añade espacio entre los elementos */
   }
 }
