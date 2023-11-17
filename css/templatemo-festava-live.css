@@ -1133,7 +1133,8 @@ strong {
   .ticket-form {
     padding: 30px;
   }
-  
+  .expand_screen{
+    display: none;}	
 }
 @media screen and (max-width: 850px) {
   .data_content_by_link .programa-genetico-img{
@@ -1160,6 +1161,7 @@ strong {
     width: 600px;
     height: 450px;
   }
+
   
 }
 
