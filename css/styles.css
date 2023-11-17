@@ -443,12 +443,15 @@ input.check-toggle-round-flat:checked + label:after {
 /* BEGIN - MODAL */
 .front_modal {
   width: 1400px;
-  height: 1000px;
+  height: 900px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: transparent;
+  border-radius: 1em;
+  box-shadow: 0.2em 0.2em 0.2em rgb(54, 53, 53);
   z-index: 1;
 }
 
