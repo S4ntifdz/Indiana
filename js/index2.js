@@ -100,11 +100,50 @@ window.addEventListener('DOMContentLoaded', function () {
             elementToShow.style.opacity = '1'
         }
     }
-    
 
+    // BEGIN - MODAL //
+    const expandScreenBtn = Array.from(document.getElementsByClassName('expand_screen'))
+    const modal = document.getElementById('id_modal')
+    const closeModalButton = document.getElementById('id_modal_button')
+    const showIframe = document.getElementById('show_iframe')
+    const iframeContainer = Array.from(document.getElementsByClassName('media_videos'))
 
+    modal.style.display = 'none'
 
+    expandScreenBtn.forEach(function (button, index) {
+        button.addEventListener('click', function () {
+            if (index == 0) {
+                showModal(index)
+            }
+            if (index == 1) {
+                showModal(index)
+            }
+            if (index == 2) {
+                showModal(index)
+            }
+            if (index == 3) {
+                showModal(index)
+            }
+            if (index == 4) {
+                showModal(index)
+            }
+            if (index == 5) {
+                showModal(index)
+            }
 
+        })
+    })
+
+    function showModal(index) {
+        showIframe.innerHTML = ''
+        showIframe.appendChild(iframeContainer[index].cloneNode(true))
+
+        modal.style.display = 'block'
+        closeModalButton.addEventListener('click', function () {
+            modal.style.display = 'none'
+        })
+    }
+    // END - MODAL //
 
     /* BEGIN - HIDE/SHOW DATA CONTENTS BY URL */
 
