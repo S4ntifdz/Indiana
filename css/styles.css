@@ -438,3 +438,9 @@ input.check-toggle-round-flat:checked + label:after {
     margin-bottom: 15px;
   }
 }
+.programa-genetico{
+  color: rgb(184, 37, 37);
+}
+
+
+

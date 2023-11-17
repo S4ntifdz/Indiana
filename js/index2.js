@@ -136,8 +136,8 @@ window.addEventListener('DOMContentLoaded', function () {
           nextSlide();
         });
       });
-      
 
+    
 })
 
 
