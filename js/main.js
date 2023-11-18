@@ -1,39 +1,57 @@
 window.addEventListener('DOMContentLoaded', function () {
 
-    /* BEGIN - TRANSLATIONS */
-    const chooseLanguage = document.getElementById('id_change_language')
+  /* BEGIN - TRANSLATIONS */
+  const chooseLanguage = document.getElementById('id_change_language')
+  const formControl = Array.from(document.getElementsByClassName('form-control'))
+  const sendFormBtn = document.getElementById('sendFormBtn')
 
-    chooseLanguage.addEventListener('change', changeLanguage)
-
-    function changeLanguage() {
-        currentLanguage = chooseLanguage.value
-        path = 'i18n/' + currentLanguage + '.json'
-
-        fetch(path)
-            .then((response) => response.json())
-            .then((translations) => {
-                const elements = document.querySelectorAll('[data-translate]')
-                elements.forEach((element) => {
-                    const key = element.getAttribute('data-translate')
-                    element.textContent = translations[key]
-                })
-            })
+  chooseLanguage.addEventListener('change', function () {
+    if (chooseLanguage.value == 'es') {
+      formControl[0].placeholder = 'Nombre completo'
+      formControl[2].placeholder = 'Empresa'
+      formControl[3].placeholder = 'Nombre completo'
+      sendFormBtn.value = 'Enviar'
     }
-    /* END - TRANSLATIONS */
+    if (chooseLanguage.value == 'en') {
+      formControl[0].placeholder = 'Full name'
+      formControl[2].placeholder = 'Company'
+      formControl[3].placeholder = 'Message'
+      sendFormBtn.value = 'Send'
+    }
 
-    /* BEGIN - REDIRECTS */
-    const navItems = Array.from(document.getElementsByClassName('nav-link'))
+  })
 
-    navItems.forEach(function(item, index) {
-        item.addEventListener('click', function () {
-            if (index >= 1) {
-                window.location.href = `index2.html?selected=${index}`
-            }
+  chooseLanguage.addEventListener('change', changeLanguage)
+
+  function changeLanguage() {
+    currentLanguage = chooseLanguage.value
+    path = 'i18n/' + currentLanguage + '.json'
+
+    fetch(path)
+      .then((response) => response.json())
+      .then((translations) => {
+        const elements = document.querySelectorAll('[data-translate]')
+        elements.forEach((element) => {
+          const key = element.getAttribute('data-translate')
+          element.textContent = translations[key]
         })
-    })
-    /* END - REDIRECTS */
+      })
+  }
+  /* END - TRANSLATIONS */
 
-$(document).ready(function() {
+  /* BEGIN - REDIRECTS */
+  const navItems = Array.from(document.getElementsByClassName('nav-link'))
+
+  navItems.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+      if (index >= 1) {
+        window.location.href = `index2.html?selected=${index}`
+      }
+    })
+  })
+  /* END - REDIRECTS */
+
+  $(document).ready(function () {
     let currentIndex = 0;
     const slides = $('.slide');
     const totalSlides = slides.length;
@@ -57,7 +75,7 @@ $(document).ready(function() {
     autoAdvance();
 
     // Manejar el evento de clic en el botón "Siguiente"
-    $('#nextButton').on('click', function() {
+    $('#nextButton').on('click', function () {
       nextSlide();
     });
   });
