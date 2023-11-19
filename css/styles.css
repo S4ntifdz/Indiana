@@ -160,7 +160,7 @@ input.check-toggle-round-flat:checked + label:after {
   margin-top: 2%;
   width: 100%;
   height: 100vh;
-  background-color: white;
+  background-color: rgb(10, 10, 10);
   overflow-y: scroll;
   margin-bottom: 200px;
   padding-bottom: 200px;
@@ -252,12 +252,19 @@ input.check-toggle-round-flat:checked + label:after {
 
 }
 /* Apartado de Catalogo Index2 */
+
+.div-catalog{
+  font-size: 25px;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: #512421;
+  padding: 2%;
+}
+
 .divs-parrafo{
   font-size: 25px;
   margin-left: 10%;
   margin-right: 10%;
-
-
 }
 
 .divs-parrafo p {
@@ -267,22 +274,15 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .catalogo-img{
-  border-radius: 50px ;
   width: 800px;
   height: 500px;
-  -webkit-border-radius: 50px ;
-  -moz-border-radius: 50px ;
-  -ms-border-radius: 50px ;
-  -o-border-radius: 50px ;
+  -webkit-border-radius: 20px ;
+  -moz-border-radius: 20px ;
+  -ms-border-radius: 20px ;
+  -o-border-radius: 20px ;
 }
 .programa-genetico-img{
-  border-radius: 50px;
   width: 800px;
-  height: 500px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
 }
 .beef-section{
     border-radius: var(--border-radius-medium) ;
@@ -319,7 +319,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 .articles article a {
     display: inline-flex;
-    color: var(--primary);
+    color: rgb(73, 73, 73);
     text-decoration: none;
 }
 
@@ -473,3 +473,70 @@ input.check-toggle-round-flat:checked + label:after {
   background-color: white;
 }
 /* END - MODAL */
+
+
+/* Comienzan las modificaciones para hacer la pagina mas parecida a los ejemplos */
+h2.grifito {
+  font-size: 56px;
+  line-height: 40px;
+}
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light p {
+  color: #fff;
+}
+.grifito {
+  font-family: 'grifito' !important;
+  color: #fff;
+  padding: 2px;
+}
+.open-sans {
+  font-family: 'Open Sans', sans-serif !important;
+  color: rgba(255,255,255,0.6);
+  font-size: 15px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.gen-program {
+  display: flex;
+  flex: 1;
+  max-height: 100vh;
+  margin-left: 0%;
+  margin-right:0%;
+  overflow: hidden;
+}
+
+.text-content {
+  flex: 1;
+  background-color: #512421;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  
+}
+.paragraph-content{
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+img.programa-genetico-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 50%;
+  object-fit: cover;
+}
+
+.divs-parrafo{
+  font-size: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+
+}
+
+.divs-parrafo p {
+  position: relative;
+  left: 5%;
+  width: 90%;
+}

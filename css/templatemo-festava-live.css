@@ -15,6 +15,10 @@ https://templatemo.com/tm-583-festava-live
   --primary-color:                #e1be3f;
   --secondary-color:              #ac0000;
   --section-bg-color:             #f0f8ff;
+  
+  --section-bg-color:             #252525;/*<---- SE CAMBIO PARA PROBAR */
+  --section-bg-main-title-color:#F0F8FF;
+
   --custom-btn-bg-color:          #ac0000;
   --custom-btn-bg-hover-color:    #820000;
   --custom-btn-lng-color:         #ac0000;/*<---- button lenguage #e32121 */
@@ -30,6 +34,7 @@ https://templatemo.com/tm-583-festava-live
 --body-font-family: 'Noto Serif Makasar', serif;
 --body-font-family: 'Oswald', sans-serif;
 --body-font-family: 'Overlock SC', sans-serif;
+--body-font-family: 'grifito' !important;
 
   --h1-font-size:                 74px;
   --h2-font-size:                 46px;
@@ -68,6 +73,7 @@ h4,
 h5,
 h6 {
   color: var(--dark-color);
+  color:#ffffff;
 }
 
 h1,
@@ -231,6 +237,10 @@ strong {
   background-color: var(--section-bg-color);
 }
 
+.section-bg-main-title {
+  background-color: var(--section-bg-main-title-color);
+}
+
 .section-overlay {
   background-color: var(--dark-color);
   position: absolute;
@@ -253,7 +263,7 @@ strong {
 }
 
 .nav-tabs {
-  background-color: var(--section-bg-color);
+  background-color: var(--section-bg-main-title-color);
   border-radius: var(--border-radius-large);
   border-bottom: 0;
   padding: 15px;
@@ -428,8 +438,8 @@ strong {
   }
 }
 .text-video-link {
-  font-size: 1.1em;
-  color: #363a3e;
+  font-size: 1.2em;
+  color: #686666;
   cursor: pointer;
 }
 .text-video-link:hover {
@@ -843,6 +853,7 @@ strong {
   font-family: 'Oswald', sans-serif;
   font-family: 'Overlock SC', sans-serif;
   font-family: 'Pacifico', cursive;
+  color: #000000;
   font-weight: 200;
 }
 /*---------------------------------------
