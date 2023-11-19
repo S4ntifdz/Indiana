@@ -107,6 +107,7 @@ h5 {
 
 h6 {
   font-size: var(--h6-font-size);
+  color: #656666;
 }
 
 p {
