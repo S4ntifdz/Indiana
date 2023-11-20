@@ -1055,7 +1055,32 @@ strong {
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
+
+@media screen and (max-width: 1235px) {
+  
+  .text-content{
+    padding: 0px;
+}
+}
 @media screen and (max-width: 991px) {
+  .gen-program {
+    flex-direction: column; /* Cambia la dirección en pantallas más pequeñas */
+    max-height: fit-content;
+    }
+    .text-content,
+    img.programa-genetico-img {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+        order: 1; 
+        
+    }
+    .programa-genetico-img {
+      height: 100%;
+      margin-left: 25%;
+    }
+
+    img.programa-genetico-img {
+        order: -1; /* Cambia el orden para invertir la posición de la imagen y el texto en pantallas más pequeñas */
+    }
   .sticky-wrapper {
     position: absolute;
     top: 0;
@@ -1063,7 +1088,9 @@ strong {
     left: 0;
     margin-top: 0px;
   }
-  
+  .text-content{
+    padding: 0px;
+}
   h1 {
     font-size: 62px;
   }
@@ -1149,10 +1176,23 @@ strong {
     display: none;}	
 }
 @media screen and (max-width: 850px) {
-  .data_content_by_link .programa-genetico-img{
+  .data_content_by_link{
     width: 90%;
     height: 80%;
   }
+  .paragraph-content{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .text-content{
+    padding: 0px;
+}
+.paragraph-content{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
   .data_content_by_link .catalogo-img{
     width: 90%;
     height: 80%;
@@ -1169,9 +1209,34 @@ strong {
     font-size: 14px;
     padding: 10px 20px;
   }
+  
+.paragraph-content{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.text-content{
+  padding: 0px;
+}
   .media_videos{
     width: 600px;
     height: 450px;
+  }
+  .gen-program {
+    flex-direction: column; /* Cambia la dirección en pantallas más pequeñas */
+    max-height: fit-content;
+  }
+  .programa-genetico-img {
+    height: 100%;
+    margin-left: 0%;
+  }
+  .text-content,
+  img.programa-genetico-img {
+      width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+      order: 1; 
+  }
+
+  img.programa-genetico-img {
+      order: -1; /* Cambia el orden para invertir la posición de la imagen y el texto en pantallas más pequeñas */
   }
 
   
@@ -1182,7 +1247,15 @@ strong {
   body {
     overflow-x: hidden; 
   }
+  
+.paragraph-content{
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
+.text-content{
+  padding: 0px;
+}
   .site-header {
     padding-left: 0;
     padding-right: 0;
@@ -1239,8 +1312,12 @@ strong {
     padding-left: 0;
     padding-right: 0;
   }
-  .data_content_by_link .programa-genetico-img{
+  .data_content_by_link {
     width: 80%;
+    height: 70%;
+  }
+  .programa-genetico-img{
+    width: 100%;
     height: 70%;
   }
   .data_content_by_link .catalogo-img{
@@ -1251,6 +1328,12 @@ strong {
     width: 450px;
     height: 350px;
   }
+
+  .programa-genetico-img {
+    width: 100%;
+    height: 70%;
+  }
+
   
 }
 
@@ -1262,7 +1345,9 @@ strong {
     left: 0;
     margin-top: 0px;
   }
-
+  .text-content{
+    padding: 0px;
+}
   h1 {
     font-size: 52px;
   }
@@ -1283,7 +1368,7 @@ strong {
     font-size: 20px;
   }
   .data_content_by_link .programa-genetico-img{
-    width: 80%;
+    width: 100%;
     height: 70%;
   }
   .data_content_by_link .catalogo-img{
@@ -1300,7 +1385,9 @@ strong {
   body {
     overflow-x: hidden;
   }
-
+  .text-content{
+    padding: 0px;
+}
   .site-header {
     padding-left: 0;
     padding-right: 0;
@@ -1358,7 +1445,7 @@ strong {
     padding-right: 0;
   }
   .data_content_by_link .programa-genetico-img{
-    width: 80%;
+    width: 100%;
     height: 50%;
   }
   .data_content_by_link .catalogo-img{
