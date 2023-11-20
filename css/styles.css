@@ -597,3 +597,38 @@ img.programa-genetico-img {
     }
 }
 
+@media screen and (max-width: 1235px) {
+  
+  .text-content{
+    padding: 0px;
+}
+.paragraph-content{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+}
+@media screen and (max-width: 991px) {
+  .paragraph-content{
+    padding-left: 0px;
+    padding-right: 0px;
+  }}
+@media screen and (max-width: 850px) {.paragraph-content{
+  padding-left: 0px;
+  padding-right: 0px;
+}}
+@media screen and (max-width: 767px) {.paragraph-content{
+  padding-left: 0px;
+  padding-right: 0px;
+}}
+@media screen and (max-width: 500px) {.paragraph-content{
+  padding-left: 0px;
+  padding-right: 0px;
+}}
+@media screen and (max-width: 480px) {.paragraph-content{
+  padding-left: 0px;
+  padding-right: 0px;
+}}
+@media screen and (max-width: 300px) {.paragraph-content{
+  padding-left: 0px;
+  padding-right: 0px;
+}}
