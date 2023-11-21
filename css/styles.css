@@ -236,7 +236,6 @@ input.check-toggle-round-flat:checked + label:after {
 
 .slide img {
   margin-top: 5.25em;
-
   width: 40em;
   height: 25.5em;
 }
@@ -620,15 +619,40 @@ img.programa-genetico-img {
   padding-left: 0px;
   padding-right: 0px;
 }}
-@media screen and (max-width: 500px) {.paragraph-content{
-  padding-left: 0px;
-  padding-right: 0px;
-}}
-@media screen and (max-width: 480px) {.paragraph-content{
-  padding-left: 0px;
-  padding-right: 0px;
-}}
-@media screen and (max-width: 300px) {.paragraph-content{
-  padding-left: 0px;
-  padding-right: 0px;
-}}
+@media screen and (max-width: 500px) {
+  .paragraph-content{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .slide img {
+    height: 25em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .paragraph-content{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .slide img {
+    height: 20em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+    .slide img {
+      height: 15em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+  .paragraph-content{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .slide img {
+      height: 10em;
+    }
+}
