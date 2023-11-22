@@ -3,6 +3,9 @@ window.addEventListener('DOMContentLoaded', function () {
     const dataContents = Array.from(document.getElementsByClassName('data_content_by_link'))
     const navItems = Array.from(document.getElementsByClassName('nav-link2'))
 
+    const expansiveBarBtn = document.getElementById('id-navbar-toggler')
+    const expansiveBar = document.getElementById('navbarNav')
+
     /* BEGIN - HIDE/SHOW DATA CONTENTS BY URL */
     const urlParams = new URLSearchParams(window.location.search)
     const selected = urlParams.get('selected')
@@ -45,6 +48,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
         /* show and hide contents by clicking the items */
         item.addEventListener('click', function () {
+
+            // collapse navbar when click navitem
+            expansiveBar.setAttribute('class', 'navbar-collapse collapse')
+            expansiveBarBtn.setAttribute('aria-expanded', 'false')
+            // collapse navbar when click navitem
             
             itemState.fill(false)
             navItems.forEach(function(item_color) {
