@@ -996,6 +996,15 @@ strong {
   margin-right: 15px;
 }
 
+.home_footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.home_footer a {
+  margin-left: 0.5em;
+}
+
 .copyright-text {
   font-size: var(--copyright-font-size);
 }
