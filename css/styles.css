@@ -486,14 +486,31 @@ h2.grifito {
   color: #fff;
   padding: 2px;
 }
-.open-sans {
+
+.open-sans,
+.sales_numbers {
   font-family: 'Open Sans', sans-serif !important;
-  color: rgba(255,255,255,0.6);
   font-size: 15px;
   text-align: left;
   font-size: 20px;
   line-height: 34px;
   font-weight: 400;
+}
+
+.open-sans {
+  color: rgba(255,255,255,0.6);
+}
+
+.sales_numbers {
+  color: white;
+  font-size: 18px;
+}
+
+.sales_divs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .gen-program {
