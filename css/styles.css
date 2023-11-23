@@ -189,11 +189,13 @@ input.check-toggle-round-flat:checked + label:after {
   margin-right: 0.5vh;
 }
 
-.nav-btn {
+.nav-btn,
+#contact_btn {
   display: inline-flex;
 }
 
-.nav-btn {
+.nav-btn,
+#contact_btn {
   margin-top: 2%;
   margin-bottom: 1%;
   padding: 1.25vh;
@@ -204,7 +206,8 @@ input.check-toggle-round-flat:checked + label:after {
   cursor: pointer;
 }
 
-.nav-btn:hover {
+.nav-btn:hover,
+#contact_btn:hover {
   color: var(--link-hover-color);
 }
 
