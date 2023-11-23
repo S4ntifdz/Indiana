@@ -35,13 +35,19 @@ window.addEventListener('DOMContentLoaded', function () {
 
         /* show and hide color to the navbar's items */
         item.addEventListener('mouseover', function () {
-            if (!itemState[index]) {
+            if (index !== 7 && !itemState[index]) {
                 this.style.color = '#ac0000'
+            }
+            if (index == 7) {
+                this.style.color = '#e1be3f'
             }
         })
 
         item.addEventListener('mouseout', function () {
-            if (!itemState[index]) {
+            if (index !== 7 && !itemState[index]) {
+                this.style.color = ''
+            }
+            if (index == 7) {
                 this.style.color = ''
             }
         })
@@ -87,6 +93,11 @@ window.addEventListener('DOMContentLoaded', function () {
             if (index == 6) {
                 hideDataContent(dataContents)
                 showDataContent(index)
+            }
+            if (index == 7) {
+                hideDataContent(dataContents)
+                showDataContent(index)
+                this.style.color = 'white'
             }
         })
     })

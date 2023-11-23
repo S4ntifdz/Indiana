@@ -45,8 +45,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link2 click-scroll" data-translate="gen_program"><strong>Programa
-                                    Genetico</strong></a>
+                            <a class="nav-link2 click-scroll" data-translate="gen_program"><strong>Programa Genetico</strong></a>
                         </li>
 
                         <li class="nav-item">
@@ -61,7 +60,7 @@
                             <a class="nav-link2 click-scroll" data-translate="media"><strong>Prensa/Media</strong></a>
                         </li>
                         <li class="nav-item">
-                            <a href="index.html#contact-section" class="nav-btn click-scroll" data-translate="company_contact">Contactenos</a>
+                            <a class="nav-link2 click-scroll" data-translate="company_contact" id="contact_btn">Contactenos</a>
                         </li>
 
                         <li class="nav-item">
@@ -596,6 +595,53 @@
                             <div class="iframe-container">
                                 <iframe class="media_videos" width="1280" height="720" src="https://www.youtube.com/embed/HzrdXAONRpc" title="Promo redes en alta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                 <button class="expand_screen" data-translate="media_expand_screen">Expandir pantalla</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="data_content_by_link" id="data_content_7">
+                    <section class="pricing-section section-padding section-bg" id="">
+                        <div class="container">
+                            <div class="row">
+            
+                                <div class="col-lg-8 col-12 mx-auto" id="contact-section">
+                                    <h2 class="text-center mb-4" data-translate="company_contact">Contactenos</h2>
+
+                                    <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel"
+                                            aria-labelledby="nav-ContactForm-tab">
+                                            <form class="custom-form contact-form mb-5 mb-lg-0" action="#" method="post"
+                                                role="form">
+                                                <div class="contact-form-body">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-12">
+                                                            <input type="text" name="contact-name" id="contact-name"
+                                                                class="form-control" placeholder="Nombre completo" required>
+                                                        </div>
+            
+                                                        <div class="col-lg-6 col-md-6 col-12">
+                                                            <input type="email" name="contact-email" id="contact-email"
+                                                                pattern="[^ @]*@[^ @]*" class="form-control"
+                                                                placeholder="Email" required>
+                                                        </div>
+                                                    </div>
+            
+                                                    <input type="text" name="contact-company" id="contact-company"
+                                                        class="form-control" placeholder="Empresa" required>
+            
+                                                    <textarea name="contact-message" rows="3" class="form-control"
+                                                        id="contact-message" placeholder="Mensaje"></textarea>
+            
+                                                    <div class="">
+                                                        <input type="submit" value="Enviar" class="btn-form" id="sendFormBtn" onclick=mailto_link()>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+            
                             </div>
                         </div>
                     </section>
