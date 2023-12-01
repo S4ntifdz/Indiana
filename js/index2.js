@@ -162,6 +162,65 @@ window.addEventListener('DOMContentLoaded', function () {
             modal.style.display = 'none'
         })
     }
+
+    const expandContentBtn  = Array.from(document.getElementsByClassName('expand_content'))
+    const modal2 = document.getElementById('id_modal_2')
+    const closeModalButton2 = document.getElementById('id_modal_button_2')
+    const showIframe2 = document.getElementById('show_iframe_2')
+    const showIframe3 = document.getElementById('show_iframe_3')
+    const images = Array.from(document.getElementsByClassName('img_export'))
+    const meats = Array.from(document.getElementsByClassName('meat_def'))
+
+    modal2.style.display = 'none'
+
+    meats.forEach(function(meat) {
+        meat.style.display = 'none'
+    })
+
+    expandContentBtn.forEach(function (button, index) {
+        button.addEventListener('click', function () {
+            if (index == 0) {
+                showModal2(index)
+            }
+            if (index == 1) {
+                showModal2(index)
+            }
+            if (index == 2) {
+                showModal2(index)
+            }
+            if (index == 3) {
+                showModal2(index)
+            }
+            if (index == 4) {
+                showModal2(index)
+            }
+            if (index == 5) {
+                showModal2(index)
+            }
+
+        })
+    })
+
+    function showModal2(index) {
+        const modalImg = images[index].cloneNode(true)
+        modalImg.style.width = '550px'
+        modalImg.style.height = '750px'
+
+        const modalMeat = meats[index].cloneNode(true)
+        modalMeat.style.display = 'block'
+
+        showIframe2.innerHTML = ''
+        showIframe2.appendChild(modalImg)
+
+        showIframe3.innerHTML = ''
+        showIframe3.appendChild(modalMeat)
+
+        modal2.style.display = 'block'
+
+        closeModalButton2.addEventListener('click', function () {
+            modal2.style.display = 'none'
+        })
+    }
     // END - MODAL //
 
     /* BEGIN - HIDE/SHOW DATA CONTENTS BY URL */

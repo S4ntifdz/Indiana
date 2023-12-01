@@ -329,7 +329,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
  
 .articles article {
-    max-width: 320px;
+    max-width: 310px;
     cursor:default;
     position: relative;
     display: block;
@@ -372,7 +372,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 .articles figure {
     width: 100%;
-    height: 200px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -474,7 +474,8 @@ input.check-toggle-round-flat:checked + label:after {
   z-index: 1;
 }
 
-.front_modal button {
+.front_modal button,
+.export_modal button {
   width: 10%;
   border: none;
   outline: none;
@@ -483,13 +484,54 @@ input.check-toggle-round-flat:checked + label:after {
   z-index: 2;
 }
 
-.expand_screen {
+.export_modal {
+  position: absolute;
+  top: 42.25%;
+  width: 1200px;
+  height: 810px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  border-radius: 1em;
+  box-shadow: 0.2em 0.2em 0.2em rgb(54, 53, 53);
+  z-index: 1;
+}
+
+.export_modal_divs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.export_modal_divs_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+
+.expand_screen,
+.expand_content {
   margin: 1.5em;
   padding: 0.75em;
   border: transparent;
   border-radius: 2em;
   color: #ac0000;
   background-color: white;
+}
+
+
+.beef-description .expand_content {
+  font-size: 1.25em;
+  color: #ac0000;
+}
+
+.beef-description .expand_content:hover {
+  font-size: 1.5em;
+  color: #ac0000;
 }
 /* END - MODAL */
 
