@@ -195,6 +195,17 @@ window.addEventListener('DOMContentLoaded', function () {
         });
       });
 
+    // function openModal(img) {
+    //     var modal = document.getElementById("myModal");
+    //     var modalImg = document.getElementById("modalImg");
+    //     modal.style.display = "block";
+    //     modalImg.src = img;
+    // }
+
+    // function closeModal() {
+    //     var modal = document.getElementById("myModal");
+    //     modal.style.display = "none";
+    // }
 })
 
 
