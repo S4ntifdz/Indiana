@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
 
   /* BEGIN - TRANSLATIONS */
   const chooseLanguage = document.getElementById('id_change_language')
@@ -79,7 +79,20 @@ window.addEventListener('DOMContentLoaded', function () {
       nextSlide();
     });
   });
+
   
+  const footerContent = document.getElementById('footer_content')
+  const footerContentData = document.getElementById('footer_content_data')
+
+  window.addEventListener('resize', function() {
+    if (window.innerWidth >= 1200) {
+      footerContent.className = 'footer_content';
+      footerContentData.className = 'footer_content_data';
+    } else {
+      footerContent.removeAttribute('class');
+      footerContentData.className = 'footer_content_data_mobile';
+    }
+  })
 
 })
 
