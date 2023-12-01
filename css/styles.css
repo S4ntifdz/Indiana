@@ -512,9 +512,14 @@ input.check-toggle-round-flat:checked + label:after {
   align-items: center;
   width: 45%;
 }
-
-.expand_screen,
-.expand_content {
+.expand_content{
+  font-size: 1.25em;
+  color: #ac0000;
+  border: transparent;
+  border-radius: 2em;
+  background-color:#f8efe3;
+}
+.expand_screen {
   margin: 1.5em;
   padding: 0.75em;
   border: transparent;
