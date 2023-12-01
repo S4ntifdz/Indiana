@@ -263,7 +263,11 @@ input.check-toggle-round-flat:checked + label:after {
   background-color: #512421;
   padding: 2%;
 }
-
+.divs-grid-media{
+  font-size: 25px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
 .divs-parrafo{
   font-size: 25px;
   margin-left: 10%;
@@ -525,6 +529,13 @@ h2.grifito {
   overflow: hidden;
 }
 
+.text-sales-content {
+  flex: 1;
+  background-color: #512421;
+  padding: 2%;
+  box-sizing: border-box; 
+}
+
 .text-content {
   flex: 1;
   background-color: #512421;
@@ -571,6 +582,39 @@ img.programa-genetico-img {
   height: 9vh;
   border-radius: 30%;
 }
+#grid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 33.333% 33.333% 33.333%;
+}
+
+#grid figure {
+  margin: 0;
+  padding: 0;
+}
+
+#grid img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+@media (max-width: 768px) {
+  #grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #grid {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .export_logo_footer .export_logo_footer_div:last-of-type img {
   margin: 0.5vh;
@@ -602,7 +646,7 @@ img.programa-genetico-img {
       max-height: fit-content;
       }
 
-    .text-content,
+    .text-content,.text-sales-content,
     img.programa-genetico-img {
         width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
         order: 1; 
@@ -618,7 +662,7 @@ img.programa-genetico-img {
 
 @media screen and (max-width: 1235px) {
   
-  .text-content{
+  .text-content,.text-sales-content{
     padding: 0px;
 }
 .paragraph-content{
