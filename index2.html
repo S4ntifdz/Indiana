@@ -895,36 +895,46 @@
                                     <!-- <button onclick="openModal('images/prensa/media1.jpg')">hohdsapd</button> -->
                                 </figure>
                                 <figure>
-                                    <img src="images/prensa/media2.jpg" alt>
+                                    <img src="images/prensa/media2.jpg" id="myImg" onclick="openModal()">
                                 </figure>
                                 <figure>
-                                    <img src="images/prensa/media3.jpg" alt>
+                                    <img src="images/prensa/media3.jpg" id="myImg" onclick="openModal()">
                                 </figure>
                                 <figure>
-                                    <img src="images/prensa/media4.jpg" alt>
+                                    <img src="images/prensa/media4.jpg" id="myImg" onclick="openModal()">
                                 </figure>
                                 <figure>
-                                    <img src="images/prensa/media5.jpg" alt>
+                                    <img src="images/prensa/media5.jpg" id="myImg" onclick="openModal()">
                                 </figure>
                                 <figure>
-                                    <img src="images/prensa/media6.jpg" alt>
+                                    <img src="images/prensa/media6.jpg" id="myImg" onclick="openModal()">
                                 </figure>
                                 <figure>
-                                    <img src="images/prensa/media7.jpg" alt>
+                                    <img src="images/prensa/media7.jpg" id="myImg" onclick="openModal()">
                                 </figure>
                                 <figure>
-                                    <img src="images/prensa/media8.jpg" alt>
+                                    <img src="images/prensa/media8.jpg" id="myImg" onclick="openModal()">
                                 </figure>
                                 <figure>
-                                    <img src="images/prensa/media9.jpg" alt>
+                                    <img src="images/prensa/media9.jpg" id="myImg" onclick="openModal()">
                                 </figure>
                             </section>
                         </div>
+                        <figure>
+                            <img id="myImg" onclick="openModal()">
+                        </figure>
                         
-<div id="myModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalImg">
-</div>
+                        
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <!-- The Close Button -->
+                            <span class="close" onclick="closeModal('myModal')">&times;</span>
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="modalImg">
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
+                        </div>
+
 
                         <div class="seccion-prensa">
                             <div class="iframe-container">
@@ -1077,7 +1087,7 @@
         </main>
 
         <!-- JAVASCRIPT FILES -->
-
+        <script src="js/modal.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.sticky.js"></script>

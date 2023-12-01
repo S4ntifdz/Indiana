@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', function () {
     /* BEGIN - HIDE/SHOW NAVBAR ITEMS COLOR AND DATA CONTENTS */
     const itemState = new Array(navItems.length).fill(false)
 
-    navItems.forEach(function(item, index) {
+    navItems.forEach(function (item, index) {
         /* set navbar item color = true every time the window is loaded */
         window.addEventListener('load', function () {
             itemState[index] = true
@@ -59,9 +59,9 @@ window.addEventListener('DOMContentLoaded', function () {
             expansiveBar.setAttribute('class', 'navbar-collapse collapse')
             expansiveBarBtn.setAttribute('aria-expanded', 'false')
             // collapse navbar when click navitem
-            
+
             itemState.fill(false)
-            navItems.forEach(function(item_color) {
+            navItems.forEach(function (item_color) {
                 item_color.style.color = ''
             })
             this.style.color = '#ac0000'
@@ -105,7 +105,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     /* hide data contents */
     function hideDataContent(dataContents) {
-        dataContents.forEach(function(data) {
+        dataContents.forEach(function (data) {
             data.style.visibility = 'hidden'
             data.style.opacity = '0'
         })
@@ -163,7 +163,7 @@ window.addEventListener('DOMContentLoaded', function () {
         })
     }
 
-    const expandContentBtn  = Array.from(document.getElementsByClassName('expand_content'))
+    const expandContentBtn = Array.from(document.getElementsByClassName('expand_content'))
     const modal2 = document.getElementById('id_modal_2')
     const closeModalButton2 = document.getElementById('id_modal_button_2')
     const showIframe2 = document.getElementById('show_iframe_2')
@@ -173,7 +173,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     modal2.style.display = 'none'
 
-    meats.forEach(function(meat) {
+    meats.forEach(function (meat) {
         meat.style.display = 'none'
     })
 
@@ -225,46 +225,66 @@ window.addEventListener('DOMContentLoaded', function () {
 
     /* BEGIN - HIDE/SHOW DATA CONTENTS BY URL */
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         let currentIndex = 0;
         const slides = $('.slide');
         const totalSlides = slides.length;
-  
+
         function showSlide(index) {
-          slides.hide();
-          slides.eq(index).show();
+            slides.hide();
+            slides.eq(index).show();
         }
-  
+
         function nextSlide() {
-          currentIndex = (currentIndex + 1) % totalSlides;
-          showSlide(currentIndex);
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
         }
-  
+
         function autoAdvance() {
-          nextSlide();
-          setTimeout(autoAdvance, 2000);
+            nextSlide();
+            setTimeout(autoAdvance, 2000);
         }
-  
+
         // Iniciar el temporizador automático
         autoAdvance();
-  
+
         // Manejar el evento de clic en el botón "Siguiente"
-        $('#nextButton').on('click', function() {
-          nextSlide();
+        $('#nextButton').on('click', function () {
+            nextSlide();
         });
-      });
+    });
+//  -----------------------MODAL DE SANTI ------------------------------
+function initializeModal(imgId, modalId, modalImgId, captionId, closeClass) {
+    var modal = document.getElementById(modalId);
+    var img = document.getElementById(imgId);
+    img.onclick = null;
+    var modalImg = document.getElementById(modalImgId);
+    var captionText = document.getElementById(captionId);
+    var span = document.getElementsByClassName(closeClass)[0];
 
-    // function openModal(img) {
-    //     var modal = document.getElementById("myModal");
-    //     var modalImg = document.getElementById("modalImg");
-    //     modal.style.display = "block";
-    //     modalImg.src = img;
-    // }
+    if (modal && img && modalImg && captionText && span) {
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
 
-    // function closeModal() {
-    //     var modal = document.getElementById("myModal");
-    //     modal.style.display = "none";
-    // }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    }
+}
+
+// Función para abrir el modal
+function openModal() {
+    initializeModal("myImg", "myModal", "modalImg", "caption", "close");
+}
+// Función para cerrar el modal
+function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "none";
+}
+
 })
 
 
