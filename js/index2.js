@@ -120,7 +120,7 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // BEGIN - MODAL //
+    // BEGIN - MODALS //
     const expandScreenBtn = Array.from(document.getElementsByClassName('expand_screen'))
     const modal = document.getElementById('id_modal')
     const closeModalButton = document.getElementById('id_modal_button')
@@ -131,25 +131,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
     expandScreenBtn.forEach(function (button, index) {
         button.addEventListener('click', function () {
-            if (index == 0) {
+            if (index >= 0) {
                 showModal(index)
             }
-            if (index == 1) {
-                showModal(index)
-            }
-            if (index == 2) {
-                showModal(index)
-            }
-            if (index == 3) {
-                showModal(index)
-            }
-            if (index == 4) {
-                showModal(index)
-            }
-            if (index == 5) {
-                showModal(index)
-            }
-
         })
     })
 
@@ -179,32 +163,16 @@ window.addEventListener('DOMContentLoaded', function () {
 
     expandContentBtn.forEach(function (button, index) {
         button.addEventListener('click', function () {
-            if (index == 0) {
+            if (index >= 0) {
                 showModal2(index)
             }
-            if (index == 1) {
-                showModal2(index)
-            }
-            if (index == 2) {
-                showModal2(index)
-            }
-            if (index == 3) {
-                showModal2(index)
-            }
-            if (index == 4) {
-                showModal2(index)
-            }
-            if (index == 5) {
-                showModal2(index)
-            }
-
         })
     })
 
     function showModal2(index) {
         const modalImg = images[index].cloneNode(true)
-        modalImg.style.width = '550px'
-        modalImg.style.height = '750px'
+        modalImg.style.width = '500px'
+        modalImg.style.height = '700px'
 
         const modalMeat = meats[index].cloneNode(true)
         modalMeat.style.display = 'block'
@@ -221,10 +189,10 @@ window.addEventListener('DOMContentLoaded', function () {
             modal2.style.display = 'none'
         })
     }
-    // END - MODAL //
+    // END - MODALS //
+
 
     /* BEGIN - HIDE/SHOW DATA CONTENTS BY URL */
-
     $(document).ready(function () {
         let currentIndex = 0;
         const slides = $('.slide');
@@ -253,39 +221,42 @@ window.addEventListener('DOMContentLoaded', function () {
             nextSlide();
         });
     });
-//  -----------------------MODAL DE SANTI ------------------------------
-function initializeModal(imgId, modalId, modalImgId, captionId, closeClass) {
-    var modal = document.getElementById(modalId);
-    var img = document.getElementById(imgId);
-    img.onclick = null;
-    var modalImg = document.getElementById(modalImgId);
-    var captionText = document.getElementById(captionId);
-    var span = document.getElementsByClassName(closeClass)[0];
+    /* END - HIDE/SHOW DATA CONTENTS BY URL */
 
-    if (modal && img && modalImg && captionText && span) {
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
+    /* MODAL SANTI */
+    const modalSanti = document.getElementById('myModal')
+    const closeModalBtn = document.getElementById('closeModal')
+    const showImage = document.getElementById('modalImg')
+    const imgContainer = Array.from(document.getElementsByClassName('myImg'))
 
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
+    modalSanti.style.display = 'none'
+
+    imgContainer.forEach(function (button, index) {
+        button.addEventListener('click', function () {
+            if (index >= 0) {
+                showModal3(index)
+            }
+        })
+    })
+
+    function showModal3(index) {
+        imgContainer.forEach(function(img) {
+            img.removeAttribute('class')
+        })
+
+        const formatImg = imgContainer[index].cloneNode(true)
+        formatImg.style.width = '1000px'
+
+        showImage.innerHTML = ''
+        showImage.appendChild(formatImg)
+
+        modalSanti.style.display = 'block'
+        closeModalBtn.addEventListener('click', function () {
+            modalSanti.style.display = 'none'
+            imgContainer.forEach(function(img) {
+                img.className = 'myImg'
+            })
+        })
     }
-}
-
-// Función para abrir el modal
-function openModal() {
-    initializeModal("myImg", "myModal", "modalImg", "caption", "close");
-}
-// Función para cerrar el modal
-function closeModal(modalId) {
-    var modal = document.getElementById(modalId);
-    modal.style.display = "none";
-}
-
+    /* MODAL SANTI */
 })
-
-
-
