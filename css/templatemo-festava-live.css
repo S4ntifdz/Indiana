@@ -296,7 +296,7 @@ strong {
 .nav-tabs .nav-link2:hover {
   background: var(--white-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
-  color: var(--primary-color);
+  color: rgb(128, 23, 16);
 }
 
 .nav-tabs h5 {
@@ -313,7 +313,7 @@ strong {
 .nav-tabs .nav-link2.active h5,
 .nav-tabs .nav-link2:focus h5, 
 .nav-tabs .nav-link2:hover h5  {
-  color: var(--primary-color);
+  color: rgb(128, 23, 16);
 }
 
 
@@ -512,7 +512,7 @@ strong {
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link2.active, 
 .navbar-nav .nav-link2:hover {
-  color: var(--secondary-color);
+  color: rgb(128, 23, 16);
 }
 
 .navbar-toggler {

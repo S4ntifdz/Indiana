@@ -216,7 +216,7 @@ input.check-toggle-round-flat:checked + label:after {
   border: transparent;
   border-radius: 3vh;
   color: white;
-  background-color: var(--custom-btn-lng-color);
+  background-color: rgb(111, 29, 23);
   cursor: pointer;
 }
 
@@ -416,6 +416,66 @@ input.check-toggle-round-flat:checked + label:after {
   max-width: 1200px;
   gap: 10px;
   overflow-x: scroll;
+}
+
+body::-webkit-scrollbar,
+.seccion-prensa::-webkit-scrollbar,
+.data_content_by_link::-webkit-scrollbar {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+body::-webkit-scrollbar,
+.data_content_by_link::-webkit-scrollbar {
+  background-color: #0c0c0c;
+}
+
+body::-webkit-scrollbar-thumb,
+.data_content_by_link::-webkit-scrollbar-thumb {
+  background-color: #512421;
+}
+
+.seccion-prensa::-webkit-scrollbar-thumb {
+  background-color: #512421;
+  border-radius: 1em;
+}
+
+body::-webkit-scrollbar-thumb:hover,
+.seccion-prensa::-webkit-scrollbar-thumb:hover,
+.data_content_by_link::-webkit-scrollbar:hover {
+  background-color: #732e2a;
+}
+
+.trending_content::before,
+.trending_content::after,
+.movies_content::before,
+.movies_content::after,
+.series_content::before,
+.series_content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 95%;
+    backdrop-filter: blur(0.05em);
+    pointer-events: none;
+}
+
+.trending_content::before,
+.movies_content::before,
+.series_content::before {
+    width: 2.5%;
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(230, 240, 255, 1));
+
+}
+
+.trending_content::after,
+.movies_content::after,
+.series_content::after  {
+    width: 5%;
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(230, 240, 255, 1));
 }
 
 /* Estilo de los contenedores de iframe dentro de la grilla */
