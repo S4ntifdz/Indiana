@@ -478,7 +478,7 @@ input.check-toggle-round-flat:checked + label:after {
   top: 5%;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: scroll;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -680,7 +680,6 @@ img.programa-genetico-img {
   }
   .export_modal_divs_content{
     width: 100%;
-    height: 6em;
     order: 1;
   }
   .export_modal_img{
@@ -940,7 +939,7 @@ img.programa-genetico-img {
   top: 5%;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: scroll;
   display: flex;
   flex-direction: column;
   justify-content: center;
