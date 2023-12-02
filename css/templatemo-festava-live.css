@@ -1064,6 +1064,11 @@ strong {
   RESPONSIVE STYLES               
 -----------------------------------------*/
 @media screen and (max-width: 1400px) {
+  .divs-grid-media{
+    font-size: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
   .navbar {
     background-color: var(--navbar-responsive-color);
     transition: background-color 0.3s;
