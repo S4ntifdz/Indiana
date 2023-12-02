@@ -480,6 +480,7 @@ input.check-toggle-round-flat:checked + label:after {
   z-index: 1;
 }
 
+
 .front_modal button,
 .export_modal button,
 .modal button {
@@ -490,6 +491,7 @@ input.check-toggle-round-flat:checked + label:after {
   border-radius: 5em;
   font-size: 30px;
   z-index: 2;
+  margin-top: -15%;
 }
 
 .export_modal_divs {
@@ -812,6 +814,7 @@ img.programa-genetico-img {
     }
 }
 /* Style the Image Used to Trigger the Modal */
+
 .myImg {
   border-radius: 5px;
   cursor: pointer;
@@ -888,7 +891,69 @@ img.programa-genetico-img {
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
-  .modal-content {
+  .modal-content,.front_modal {
     width: 100%;
+  }
+}
+
+
+.front_modal,
+.export_modal,
+.modal {
+  position: fixed;
+  left: 0;
+  top: 5%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  border-radius: 1em;
+  box-shadow: 0.2em 0.2em 0.2em rgb(54, 53, 53);
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+  z-index: 1;
+}
+
+.front_modal button,
+.export_modal button,
+.modal button {
+  width: 15%; /* Adjust the width based on your design */
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 5em;
+  font-size: 30px;
+  z-index: 2;
+  margin-top: -5%; /* Adjust the margin based on your design */
+}
+
+/* Responsive styles for images */
+.front_modal img,
+.export_modal img,
+.export_modal_divs,
+.export_model_divs_content,
+.modal img {
+  max-width: 100%; /* Make the image responsive within its container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* Add media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+  .front_modal,.export_modal_divs,
+  .export_model_divs_content,
+  .export_modal,
+  .modal {
+    top: 0; /* Adjust the top value for smaller screens */
+  }
+
+  .front_modal button,
+  .export_modal button,
+  .modal button {
+    width: 30%; /* Adjust the width for smaller screens */
+    margin-top: -10%; /* Adjust the margin for smaller screens */
   }
 }
