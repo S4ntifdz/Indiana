@@ -410,11 +410,12 @@ input.check-toggle-round-flat:checked + label:after {
 /* Estilo del contenedor de la sección de prensa */
 .seccion-prensa {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;  */
   margin: 0 auto;
-  justify-content: center;
+  justify-content: left;
   max-width: 1200px;
-  gap: 25px;
+  gap: 10px;
+  overflow-x: scroll;
 }
 
 /* Estilo de los contenedores de iframe dentro de la grilla */
@@ -495,7 +496,7 @@ input.check-toggle-round-flat:checked + label:after {
 .front_modal button,
 .export_modal button,
 .modal button {
-  width: 5%;
+  width: 50px;
   border: none;
   outline: none;
   background-color: white;
@@ -955,7 +956,7 @@ img.programa-genetico-img {
 .front_modal button,
 .export_modal button,
 .modal button {
-  width: 15%; /* Adjust the width based on your design */
+  width: 50px; /* Adjust the width based on your design */
   border: none;
   outline: none;
   background-color: white;
@@ -987,7 +988,7 @@ img.programa-genetico-img {
   .front_modal button,
   .export_modal button,
   .modal button {
-    width: 30%; /* Adjust the width for smaller screens */
+    width: 50px; /* Adjust the width for smaller screens */
     margin-top: -10%; /* Adjust the margin for smaller screens */
   }
 }
