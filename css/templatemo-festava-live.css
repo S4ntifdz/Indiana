@@ -1170,6 +1170,17 @@ background-color: #00000000;
 
 
 @media screen and (max-width: 991px) {
+  .export_modal_divs{
+    flex-direction: column; /* Cambia la dirección en pantallas más pequeñas */
+    max-height: fit-content;
+    padding-left: 5%;
+  }
+  .export_modal_divs_content{
+    order: 1;
+  }
+  .export_modal_img{
+    order: -1;
+  }
   .gen-program {
     flex-direction: column; /* Cambia la dirección en pantallas más pequeñas */
     max-height: fit-content;

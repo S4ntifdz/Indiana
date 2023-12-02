@@ -170,10 +170,23 @@ window.addEventListener('DOMContentLoaded', function () {
     })
 
     function showModal2(index) {
-        const modalImg = images[index].cloneNode(true)
-        modalImg.style.width = '500px'
-        modalImg.style.height = '700px'
-
+        const modalImg = images[index].cloneNode(true) 
+        modalImg.style.width = '300px'
+        modalImg.style.height = '500px'
+        window.addEventListener('resize', function () {
+        
+        if (window.innerWidth >= 1200) {
+            modalImg.style.width = '300px'
+            modalImg.style.height = '500px'
+        }
+        else if (window.innerWidth <= 991) {
+            modalImg.style.width = '300px'
+            modalImg.style.height = '400px'
+        }
+        else if (window.innerWidth <= 767) {
+        modalImg.style.width = '200px'
+        modalImg.style.height = '300px'
+        }})
         const modalMeat = meats[index].cloneNode(true)
         modalMeat.style.display = 'block'
 
