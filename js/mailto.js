@@ -1,4 +1,4 @@
-function mailto_link(event){
+function mailto_link(){
     const contactname = document.getElementById('contact-name').value;
     const contactemail = document.getElementById('contact-email').value;
     const contactcompany = document.getElementById('contact-company').value;
@@ -8,7 +8,6 @@ function mailto_link(event){
     Compañía: ${contactcompany}
     Mensaje: ${message}`
 
-    event.preventDefault()
 
     const mailto_link=`mailto:santidinos@gmail.com?subject=Datos de contacto&body=${encodeURIComponent(body)}`
     win=window.open(mailto_link,'emailWin')
