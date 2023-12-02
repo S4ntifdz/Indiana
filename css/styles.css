@@ -279,7 +279,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 .divs-grid-media{
   font-size: 25px;
-  margin-left: 20%;
+  margin-left: 23%;
   margin-right: 20%;
 }
 .divs-parrafo{
@@ -447,37 +447,6 @@ body::-webkit-scrollbar-thumb:hover,
   color: #732e2a;
 }
 
-.trending_content::before,
-.trending_content::after,
-.movies_content::before,
-.movies_content::after,
-.series_content::before,
-.series_content::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 95%;
-    backdrop-filter: blur(0.05em);
-    pointer-events: none;
-}
-
-.trending_content::before,
-.movies_content::before,
-.series_content::before {
-    width: 2.5%;
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(230, 240, 255, 1));
-
-}
-
-.trending_content::after,
-.movies_content::after,
-.series_content::after  {
-    width: 5%;
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(230, 240, 255, 1));
-}
 
 /* Estilo de los contenedores de iframe dentro de la grilla */
 .iframe-container {
