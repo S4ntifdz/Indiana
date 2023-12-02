@@ -272,4 +272,14 @@ window.addEventListener('DOMContentLoaded', function () {
         })
     }
     /* MODAL SANTI */
+
+
+    document.addEventListener('keyup', (event) => {
+        if (event.key === 'Escape') {
+            modal.style.display = 'none'
+            modal2.style.display = 'none'
+            modalSanti.style.display = 'none'
+        }
+    });
+    
 })
