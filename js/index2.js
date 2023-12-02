@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
         /* set navbar item color by url */
         if (navItems[selected]) {
-            navItems[selected].style.color = '#ac0000'
+            navItems[selected].style.color = 'rgb(128, 23, 16)'
         }
     }
     /* END - HIDE/SHOW DATA CONTENTS BY URL */
@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', function () {
         /* show and hide color to the navbar's items */
         item.addEventListener('mouseover', function () {
             if (index !== 7 && !itemState[index]) {
-                this.style.color = '#ac0000'
+                this.style.color = 'rgb(128, 23, 16)'
             }
             if (index == 7) {
                 this.style.color = '#e1be3f'
@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', function () {
             navItems.forEach(function (item_color) {
                 item_color.style.color = ''
             })
-            this.style.color = '#ac0000'
+            this.style.color = 'rgb(128, 23, 16)'
             itemState[index] = true
 
             if (index == 0) {
