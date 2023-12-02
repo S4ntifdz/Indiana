@@ -421,7 +421,7 @@ input.check-toggle-round-flat:checked + label:after {
 body::-webkit-scrollbar,
 .seccion-prensa::-webkit-scrollbar,
 .data_content_by_link::-webkit-scrollbar {
-  width: 1.5em;
+  width: 0.5em;
   height: 1.5em;
 }
 
@@ -443,7 +443,7 @@ body::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb:hover,
 .seccion-prensa::-webkit-scrollbar-thumb:hover,
 .data_content_by_link::-webkit-scrollbar:hover {
-  background-color: #732e2a;
+  color: #rgb(150, 28, 22)
 }
 
 .trending_content::before,
