@@ -86,11 +86,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('resize', function() {
     if (window.innerWidth >= 1200) {
-      footerContent.className = 'footer_content';
-      footerContentData.className = 'footer_content_data';
+      footerContent.className = 'footer_content'
+      footerContentData.className = 'footer_content_data'
     } else {
-      footerContent.removeAttribute('class');
-      footerContentData.className = 'footer_content_data_mobile';
+      footerContent.removeAttribute('class')
+      footerContentData.className = 'footer_content_data_mobile'
     }
   })
 
