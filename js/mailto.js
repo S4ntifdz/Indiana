@@ -5,6 +5,6 @@ function mailto_link(){
     var message = document.getElementById('contact-name').value;
     var body = "Nombre completo:"+ contactname + "        Correo de contacto:"+ contactemail + "        compañia" + contactcompany + "        mensaje:"+ message
 
-    var mailto_link='mailto:santidinos@gmail.com'+'?subject=Datos de contacto'+'&body='+body
+    var mailto_link='mailto:info@cabanalaindiana.com'+'?subject=Datos de contacto'+'&body='+body
     win=window.open(mailto_link,'emailWin');
 }
