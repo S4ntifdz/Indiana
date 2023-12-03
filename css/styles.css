@@ -663,6 +663,12 @@ img.programa-genetico-img {
   left: 5%;
   width: 90%;
 }
+.beef-text-names{
+  font-size: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #0c0c0c;
+}
 
 /* exportacion footer */
 .export_logo_footer {
