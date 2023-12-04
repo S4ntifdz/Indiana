@@ -406,6 +406,14 @@ input.check-toggle-round-flat:checked + label:after {
   
   box-shadow: #0c0c0c 0px 0px 20px 0px;
 }
+.banner-export-section{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display:block;
+  overflow: hidden;
+}
+
 
 
 /* Estilo del contenedor de la sección de prensa */
