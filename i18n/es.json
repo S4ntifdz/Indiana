@@ -69,10 +69,16 @@
     "export_zone_meat_3": "Corazón de Cuadril",
     "export_zone_meat_4": "Entraña",
     "export_zone_meat_5": "Lomo sin condón",
+    "export_zone_meat_6": "Nalga",
+    "export_zone_meat_7": "Cuadrada",
+    "export_zone_meat_8": "Bola de lomo",
     "export_zone_meat_description_1": "El corte se encuentra ubicado en la región dorso lumbar. Limita hacia caudal con el cuadril, hacia ventral con el asado y el vacío, y hacia craneal con la aguja. Está integrado por el bife angosto, el bife ancho y el lomo.",
     "export_zone_meat_description_2": "Corte ubicado anatómicamente en la región dorsal. Hacia caudal limita con el bife angosto, hacia craneal con la aguja y hacia ventral con el asado.",
     "export_zone_meat_description_3": "En base al cuadril sin tapa, se extrae el músculo glúteo profundo quedando exclusivamente integrado este corte por el músculo glúteo medio y accesorio.",
     "export_zone_meat_description_4": "",
     "export_zone_meat_description_5": "Está ubicado en la región sublumbar. Es de forma cónica, alargado y aplanada de arriba hacia abajo. Limita hacia el dorsal con los bifes angostos y hacia caudal con el cuadril.",
+    "export_zone_meat_description_6": "Está constituído por los músculos removidos en la preparación de la nalga de adentro sin tapa, es decir recto interno, sartorio y pectíneo. Alternativamente, pueden descartarse los dos músculos mencionados. En este caso, el corte queda integrado exclusivamente por el m. recto interno (gracilis).",
+    "export_zone_meat_description_7": "Se relaciona en su parte superior con el cuadril, anteriormente con la bola de lomo, hacia atrás con el peceto y en su parte interna con la nalga de adentro.",
+    "export_zone_meat_description_8": "El corte se encuentra ubicado en la región dorso lumbar. Limita hacia caudal con el cuadril, hacia ventral con el asado y el vacío, y hacia craneal con la aguja. Está integrado por el bife angosto, el bife ancho y el lomo.",
     "media_expand_screen": "Expandir pantalla"
 }
