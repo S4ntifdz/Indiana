@@ -171,12 +171,12 @@ window.addEventListener('DOMContentLoaded', function () {
 
     function showModal2(index) {
         const modalImg = images[index].cloneNode(true) 
-        modalImg.style.width = '300px'
+        modalImg.style.width = '400px'
         modalImg.style.height = '500px'
         window.addEventListener('resize', function () {
         
         if (window.innerWidth >= 1200) {
-            modalImg.style.width = '300px'
+            modalImg.style.width = '400px'
             modalImg.style.height = '500px'
         }
         else if (window.innerWidth <= 991) {
