@@ -65,9 +65,14 @@
     "export_zone_index2_contact": "Contact: ",
     "export_zone_index2_contact_link": "pcossio@cabanalaindiana.com",
     "export_zone_meat_1": "Striploin",
-    "export_zone_meat_2": "Heart of Rump",
-    "export_zone_meat_3": "Thin Skirt",
-    "export_zone_meat_4": "Rib Eye",
+    "export_zone_meat_2": "Cube Roll",
+    "export_zone_meat_3": "Heart of Rump",
+    "export_zone_meat_4": "Inside Skirt",
     "export_zone_meat_5": "Tenderloin",
+    "export_zone_meat_description_1": "The cut is located in the thoracolumbar region. It borders caudally with the rump, ventrally with the roast and the void, and cranially with the needle. It's made up of the narrow steak, the wide steak and the loin.",
+    "export_zone_meat_description_2": "Cut located anatomically in the dorsal region. Caudally it borders with the narrow steak, cranially with the needle, and ventrally with the roast.",
+    "export_zone_meat_description_3": "Based on the thigh without cover, the deep gluteus muscle is extracted, leaving this cut exclusively integrated by the gluteus medius muscle and accessory.",
+    "export_zone_meat_description_4": "",
+    "export_zone_meat_description_5": "It's located in the sublumbar region. It's conical in shape, elongated and flattened from top to bottom. It borders towards the dorsal with the narrow bifes and towards the caudal with the rump.",
     "media_expand_screen": "Enlarge screen"
 }

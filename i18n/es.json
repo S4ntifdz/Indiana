@@ -65,9 +65,14 @@
     "export_zone_index2_contact": "Contacto: ",
     "export_zone_index2_contact_link": "pcossio@cabanalaindiana.com",
     "export_zone_meat_1": "Bife Angosto",
-    "export_zone_meat_2": "Corazón de Cuadril",
-    "export_zone_meat_3": "Entraña",
-    "export_zone_meat_4": "Ojo de Bife",
-    "export_zone_meat_5": "Tenderloin",
+    "export_zone_meat_2": "Bife ancho sin tapa",
+    "export_zone_meat_3": "Corazón de Cuadril",
+    "export_zone_meat_4": "Entraña",
+    "export_zone_meat_5": "Lomo sin condón",
+    "export_zone_meat_description_1": "El corte se encuentra ubicado en la región dorso lumbar. Limita hacia caudal con el cuadril, hacia ventral con el asado y el vacío, y hacia craneal con la aguja. Está integrado por el bife angosto, el bife ancho y el lomo.",
+    "export_zone_meat_description_2": "Corte ubicado anatómicamente en la región dorsal. Hacia caudal limita con el bife angosto, hacia craneal con la aguja y hacia ventral con el asado.",
+    "export_zone_meat_description_3": "En base al cuadril sin tapa, se extrae el músculo glúteo profundo quedando exclusivamente integrado este corte por el músculo glúteo medio y accesorio.",
+    "export_zone_meat_description_4": "",
+    "export_zone_meat_description_5": "Está ubicado en la región sublumbar. Es de forma cónica, alargado y aplanada de arriba hacia abajo. Limita hacia el dorsal con los bifes angostos y hacia caudal con el cuadril.",
     "media_expand_screen": "Expandir pantalla"
 }
