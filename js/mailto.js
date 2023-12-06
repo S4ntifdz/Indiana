@@ -9,6 +9,6 @@ function mailto_link(){
     Mensaje: ${message}`
 
 
-    const mailto_link=`mailto:santidinos@gmail.com?subject=Datos de contacto&body=${encodeURIComponent(body)}`
+    const mailto_link=`mailto:info@cabanalaindiana.com?subject=Datos de contacto&body=${encodeURIComponent(body)}`
     win=window.open(mailto_link,'emailWin')
 }
